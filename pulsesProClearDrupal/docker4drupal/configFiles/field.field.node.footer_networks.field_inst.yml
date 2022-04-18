@@ -1,0 +1,23 @@
+uuid: 8fff79b3-bfff-4604-8010-5304b5c1478b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inst
+    - node.type.footer_networks
+  module:
+    - link
+id: node.footer_networks.field_inst
+field_name: field_inst
+entity_type: node
+bundle: footer_networks
+label: inst
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,8 @@
+uuid: e8a6d072-505f-40fa-9669-61d09ca6d79a
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Category'
+vid: news_category
+description: 'this taxonomy includes category of news '
+weight: 0

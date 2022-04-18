@@ -1,0 +1,23 @@
+uuid: 11a07efa-890a-4ee6-9548-9c20cc5b149d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events
+    - node.type.aboutus
+  module:
+    - link
+id: node.aboutus.field_events
+field_name: field_events
+entity_type: node
+bundle: aboutus
+label: EVENTS
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

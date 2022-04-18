@@ -1,0 +1,24 @@
+uuid: eb13ed76-a56c-4aee-9726-ea599d10eced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dateofpublish
+    - node.type.article_with_news
+  module:
+    - datetime
+id: node.article_with_news.field_dateofpublish
+field_name: field_dateofpublish
+entity_type: node
+bundle: article_with_news
+label: DateOfPublish
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

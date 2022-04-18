@@ -1,0 +1,24 @@
+uuid: 4ec19f0e-69e6-4610-859c-f3c2973264a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.footer_second_
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__footer_second__block_1
+theme: bartik
+region: footer_second
+weight: 0
+provider: null
+plugin: 'views_block:footer_second_-block_1'
+settings:
+  id: 'views_block:footer_second_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

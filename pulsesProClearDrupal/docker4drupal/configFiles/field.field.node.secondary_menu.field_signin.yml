@@ -1,0 +1,23 @@
+uuid: 9c53e5a5-f69e-473f-8c6e-ab1f31488cac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_signin
+    - node.type.secondary_menu
+  module:
+    - link
+id: node.secondary_menu.field_signin
+field_name: field_signin
+entity_type: node
+bundle: secondary_menu
+label: signIn
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

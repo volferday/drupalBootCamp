@@ -1,0 +1,23 @@
+uuid: f0357efd-5c11-4401-a5b0-e361167fdf8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instf
+    - node.type.socials_footer
+  module:
+    - link
+id: node.socials_footer.field_instf
+field_name: field_instf
+entity_type: node
+bundle: socials_footer
+label: instF
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

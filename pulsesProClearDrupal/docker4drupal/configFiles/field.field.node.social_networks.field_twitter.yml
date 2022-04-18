@@ -1,0 +1,23 @@
+uuid: 829058e2-f479-4110-8eb4-d035f78d920c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter
+    - node.type.social_networks
+  module:
+    - link
+id: node.social_networks.field_twitter
+field_name: field_twitter
+entity_type: node
+bundle: social_networks
+label: twitter
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

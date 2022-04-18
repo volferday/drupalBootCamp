@@ -1,0 +1,17 @@
+uuid: 1f307ca0-010e-456a-96d9-51dd61f9b1e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Weather
+type: weather
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

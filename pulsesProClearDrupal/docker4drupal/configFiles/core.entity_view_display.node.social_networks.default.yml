@@ -1,0 +1,59 @@
+uuid: d10be17b-b7c1-4fac-b1fb-48957cde3959
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_networks.field_facebook
+    - field.field.node.social_networks.field_twitter
+    - field.field.node.social_networks.field_youtube
+    - node.type.social_networks
+  module:
+    - link
+    - user
+id: node.social_networks.default
+targetEntityType: node
+bundle: social_networks
+mode: default
+content:
+  field_facebook:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_twitter:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_youtube:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

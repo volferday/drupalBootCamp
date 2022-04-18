@@ -1,0 +1,18 @@
+uuid: 03be11ac-075c-4f30-9d44-caf8ca8616be
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.header
+id: node.header.title
+field_name: title
+entity_type: node
+bundle: header
+label: 'general header'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

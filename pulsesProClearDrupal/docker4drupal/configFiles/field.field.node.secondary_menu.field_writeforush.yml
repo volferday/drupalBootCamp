@@ -1,0 +1,23 @@
+uuid: bf492327-8454-40d0-8bed-fbdd0dec8b2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_writeforush
+    - node.type.secondary_menu
+  module:
+    - link
+id: node.secondary_menu.field_writeforush
+field_name: field_writeforush
+entity_type: node
+bundle: secondary_menu
+label: writeForUsH
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

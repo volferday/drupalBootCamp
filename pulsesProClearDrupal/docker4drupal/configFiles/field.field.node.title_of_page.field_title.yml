@@ -1,0 +1,24 @@
+uuid: bcfa667a-599d-47c0-836c-17d3eed36a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.title_of_page
+  module:
+    - text
+id: node.title_of_page.field_title
+field_name: field_title
+entity_type: node
+bundle: title_of_page
+label: Title
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'PULSES PRO'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

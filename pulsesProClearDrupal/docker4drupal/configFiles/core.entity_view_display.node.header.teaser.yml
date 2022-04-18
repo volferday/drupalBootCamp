@@ -1,0 +1,28 @@
+uuid: 61d36349-b2a9-4b5e-b634-dab26ac8052f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.header.field_date
+    - field.field.node.header.field_facebook
+    - field.field.node.header.field_twitter
+    - field.field.node.header.field_youtube
+    - node.type.header
+  module:
+    - user
+id: node.header.teaser
+targetEntityType: node
+bundle: header
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_facebook: true
+  field_twitter: true
+  field_youtube: true

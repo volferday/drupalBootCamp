@@ -1,0 +1,85 @@
+uuid: ee889981-d2ea-4eec-9595-a062fb7b02de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.aboutus.field_about
+    - field.field.node.aboutus.field_advertise
+    - field.field.node.aboutus.field_events
+    - field.field.node.aboutus.field_in_the_press
+    - field.field.node.aboutus.field_write_for_us
+    - node.type.aboutus
+  module:
+    - link
+    - user
+id: node.aboutus.default
+targetEntityType: node
+bundle: aboutus
+mode: default
+content:
+  field_about:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_advertise:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_events:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_in_the_press:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_write_for_us:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

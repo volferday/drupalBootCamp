@@ -1,0 +1,15 @@
+uuid: 56dc2e2f-ce89-4fe0-bbf0-9d3d392d24d2
+langcode: en
+status: true
+dependencies: {  }
+name: genera
+label: 'General news'
+effects:
+  02777ca1-9463-4967-845d-832f9f0dfdc9:
+    uuid: 02777ca1-9463-4967-845d-832f9f0dfdc9
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: 520
+      upscale: true

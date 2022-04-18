@@ -1,0 +1,30 @@
+uuid: 1609a588-4b75-4508-90ba-bfe21c20402b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.footer_networks.field_facebook
+    - field.field.node.footer_networks.field_inst
+    - field.field.node.footer_networks.field_telegram
+    - field.field.node.footer_networks.field_twitter
+    - field.field.node.footer_networks.field_youtube
+    - node.type.footer_networks
+  module:
+    - user
+id: node.footer_networks.teaser
+targetEntityType: node
+bundle: footer_networks
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_facebook: true
+  field_inst: true
+  field_telegram: true
+  field_twitter: true
+  field_youtube: true

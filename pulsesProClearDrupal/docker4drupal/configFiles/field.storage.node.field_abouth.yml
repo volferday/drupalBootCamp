@@ -1,0 +1,19 @@
+uuid: 53a338c1-6fa5-4c33-9805-2dbdcbcff1f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_abouth
+field_name: field_abouth
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

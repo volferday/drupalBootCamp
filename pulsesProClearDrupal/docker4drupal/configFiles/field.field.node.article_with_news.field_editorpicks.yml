@@ -1,0 +1,23 @@
+uuid: 9e6a90bf-a587-4f43-aa79-375338dc3f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorpicks
+    - node.type.article_with_news
+id: node.article_with_news.field_editorpicks
+field_name: field_editorpicks
+entity_type: node
+bundle: article_with_news
+label: EditorPicks
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

@@ -1,0 +1,17 @@
+uuid: c4af40b0-d7ff-4303-8655-73b31e33ca10
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Header
+type: header
+description: 'Header of PULSES PRO'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

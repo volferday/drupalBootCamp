@@ -1,0 +1,17 @@
+uuid: 2da05c6a-2950-4911-99c2-f995e8b9599b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Article with news'
+type: article_with_news
+description: 'article for each page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,17 @@
+uuid: 64c8768b-8b9e-49a4-8021-b835a0cfc89e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'secondary menu'
+type: secondary_menu
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

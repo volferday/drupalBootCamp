@@ -1,0 +1,23 @@
+uuid: 42537fe9-84fd-475d-83bf-848398672d37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_temperature
+    - node.type.weather
+id: node.weather.field_temperature
+field_name: field_temperature
+entity_type: node
+bundle: weather
+label: Temperature
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float -50
+  max: !!float 50
+  prefix: ''
+  suffix: °C
+field_type: float

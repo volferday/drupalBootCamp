@@ -1,0 +1,32 @@
+uuid: de0d70e3-1500-455a-ad3f-e2a2cd2984d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.secondary_menu.field_abouth
+    - field.field.node.secondary_menu.field_advertiseh
+    - field.field.node.secondary_menu.field_eventsh
+    - field.field.node.secondary_menu.field_inthepressh
+    - field.field.node.secondary_menu.field_signin
+    - field.field.node.secondary_menu.field_writeforush
+    - node.type.secondary_menu
+  module:
+    - user
+id: node.secondary_menu.teaser
+targetEntityType: node
+bundle: secondary_menu
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_abouth: true
+  field_advertiseh: true
+  field_eventsh: true
+  field_inthepressh: true
+  field_signin: true
+  field_writeforush: true

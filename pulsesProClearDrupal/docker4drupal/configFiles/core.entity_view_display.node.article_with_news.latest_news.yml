@@ -1,0 +1,53 @@
+uuid: bbac6d7f-17c7-4f00-acbc-2b1f08009242
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.latest_news
+    - field.field.node.article_with_news.body
+    - field.field.node.article_with_news.field_author
+    - field.field.node.article_with_news.field_category_
+    - field.field.node.article_with_news.field_comments
+    - field.field.node.article_with_news.field_dateofpublish
+    - field.field.node.article_with_news.field_editorpicks
+    - field.field.node.article_with_news.field_media_
+    - field.field.node.article_with_news.field_short_description
+    - field.field.node.article_with_news.field_title_of_news
+    - image.style.thumbnail
+    - node.type.article_with_news
+  module:
+    - datetime
+    - media
+    - user
+id: node.article_with_news.latest_news
+targetEntityType: node
+bundle: article_with_news
+mode: latest_news
+content:
+  field_dateofpublish:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_:
+    type: media_thumbnail
+    label: inline
+    settings:
+      image_link: ''
+      image_style: thumbnail
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_author: true
+  field_category_: true
+  field_comments: true
+  field_editorpicks: true
+  field_short_description: true
+  field_title_of_news: true
+  links: true

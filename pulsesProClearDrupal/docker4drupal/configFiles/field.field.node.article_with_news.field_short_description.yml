@@ -1,0 +1,21 @@
+uuid: ffbca9e7-e10d-4269-9ec1-7b4916948360
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.article_with_news
+  module:
+    - text
+id: node.article_with_news.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: article_with_news
+label: 'Short description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

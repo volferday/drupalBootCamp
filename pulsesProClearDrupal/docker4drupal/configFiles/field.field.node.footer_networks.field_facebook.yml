@@ -1,0 +1,23 @@
+uuid: 4f00df44-daee-4195-8caf-9e6bd9d086d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facebook
+    - node.type.footer_networks
+  module:
+    - link
+id: node.footer_networks.field_facebook
+field_name: field_facebook
+entity_type: node
+bundle: footer_networks
+label: facebook
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

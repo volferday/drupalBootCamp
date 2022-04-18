@@ -1,0 +1,17 @@
+uuid: 60dcdad8-4764-488f-9473-59c998367fe0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Title of page'
+type: title_of_page
+description: 'General name of the page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

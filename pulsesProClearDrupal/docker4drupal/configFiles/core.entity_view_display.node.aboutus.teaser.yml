@@ -1,0 +1,30 @@
+uuid: 13c8901d-38e1-48e9-9737-048ba1fa1a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.aboutus.field_about
+    - field.field.node.aboutus.field_advertise
+    - field.field.node.aboutus.field_events
+    - field.field.node.aboutus.field_in_the_press
+    - field.field.node.aboutus.field_write_for_us
+    - node.type.aboutus
+  module:
+    - user
+id: node.aboutus.teaser
+targetEntityType: node
+bundle: aboutus
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_about: true
+  field_advertise: true
+  field_events: true
+  field_in_the_press: true
+  field_write_for_us: true

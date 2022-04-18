@@ -1,0 +1,70 @@
+uuid: b725cc52-f20c-48eb-a826-6391473d74c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.header.field_date
+    - field.field.node.header.field_facebook
+    - field.field.node.header.field_twitter
+    - field.field.node.header.field_youtube
+    - node.type.header
+  module:
+    - datetime
+    - link
+    - user
+id: node.header.default
+targetEntityType: node
+bundle: header
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_facebook:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_twitter:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_youtube:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

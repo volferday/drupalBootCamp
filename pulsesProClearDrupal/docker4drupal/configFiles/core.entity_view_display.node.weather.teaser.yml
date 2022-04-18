@@ -1,0 +1,24 @@
+uuid: a964101f-cf50-4ac4-85ff-bc5aae45c9d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.weather.field_city
+    - field.field.node.weather.field_temperature
+    - node.type.weather
+  module:
+    - user
+id: node.weather.teaser
+targetEntityType: node
+bundle: weather
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_city: true
+  field_temperature: true

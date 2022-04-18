@@ -1,0 +1,23 @@
+uuid: 76654fa7-b6ae-48b6-b262-71355586ee38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube
+    - node.type.footer_networks
+  module:
+    - link
+id: node.footer_networks.field_youtube
+field_name: field_youtube
+entity_type: node
+bundle: footer_networks
+label: youtube
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

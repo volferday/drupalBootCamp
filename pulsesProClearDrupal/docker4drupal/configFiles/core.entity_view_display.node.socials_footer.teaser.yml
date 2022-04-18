@@ -1,0 +1,28 @@
+uuid: 7610d1db-996b-4ea2-9095-3072654c8473
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.socials_footer.field_facebookf
+    - field.field.node.socials_footer.field_instf
+    - field.field.node.socials_footer.field_twitterf
+    - field.field.node.socials_footer.field_ytf
+    - node.type.socials_footer
+  module:
+    - user
+id: node.socials_footer.teaser
+targetEntityType: node
+bundle: socials_footer
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_facebookf: true
+  field_instf: true
+  field_twitterf: true
+  field_ytf: true

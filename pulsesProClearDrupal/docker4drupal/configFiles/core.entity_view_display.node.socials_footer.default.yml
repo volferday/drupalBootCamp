@@ -1,0 +1,72 @@
+uuid: 79693b13-0edd-4775-bb99-3ab62982d007
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.socials_footer.field_facebookf
+    - field.field.node.socials_footer.field_instf
+    - field.field.node.socials_footer.field_twitterf
+    - field.field.node.socials_footer.field_ytf
+    - node.type.socials_footer
+  module:
+    - link
+    - user
+id: node.socials_footer.default
+targetEntityType: node
+bundle: socials_footer
+mode: default
+content:
+  field_facebookf:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_instf:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_twitterf:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_ytf:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
