@@ -1,22 +1,22 @@
-uuid: ab49cd33-40ad-49f2-82d0-6700a10518b4
+uuid: 78186a49-8d23-428b-a115-9e4fbb14fbf4
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.homepage
+    - views.view.new_podcast
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__homepage_block_1
+id: views_block__new_podcast_block_1
 theme: bartik
 region: content
-weight: -6
+weight: -4
 provider: null
-plugin: 'views_block:homepage-block_1'
+plugin: 'views_block:new_podcast-block_1'
 settings:
-  id: 'views_block:homepage-block_1'
+  id: 'views_block:new_podcast-block_1'
   label: ''
   label_display: '0'
   provider: views
