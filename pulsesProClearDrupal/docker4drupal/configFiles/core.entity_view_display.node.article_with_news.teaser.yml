@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.article_with_news.field_comments
     - field.field.node.article_with_news.field_dateofpublish
     - field.field.node.article_with_news.field_editorpicks
+    - field.field.node.article_with_news.field_general_news
+    - field.field.node.article_with_news.field_is_podcast
     - field.field.node.article_with_news.field_media_
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
@@ -41,6 +43,8 @@ hidden:
   field_comments: true
   field_dateofpublish: true
   field_editorpicks: true
+  field_general_news: true
+  field_is_podcast: true
   field_media_: true
   field_short_description: true
   field_title_of_news: true

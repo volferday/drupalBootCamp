@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.general_news
     - field.storage.node.field_author
     - field.storage.node.field_category_
     - field.storage.node.field_dateofpublish
@@ -10,14 +11,10 @@ dependencies:
     - field.storage.node.field_short_description
     - image.style.genera
     - node.type.article_with_news
-    - taxonomy.vocabulary.news_category
-  content:
-    - 'taxonomy_term:news_category:aa4eb839-8e8b-4d3c-8474-ee8fbed3b116'
   module:
     - datetime
     - media
     - node
-    - taxonomy
     - text
     - user
 id: homepage
@@ -418,7 +415,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 50
+          items_per_page: 1
       exposed_form:
         type: basic
         options:
@@ -438,16 +435,14 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
+        field_dateofpublish_value:
+          id: field_dateofpublish_value
+          table: node__field_dateofpublish
+          field: field_dateofpublish_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+          plugin_id: datetime
           order: DESC
           expose:
             label: ''
@@ -511,17 +506,16 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
+        field_general_news_value:
+          id: field_general_news_value
+          table: node__field_general_news
+          field: field_general_news_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            - 9
+          plugin_id: boolean
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -538,7 +532,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -551,16 +544,13 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          vid: news_category
-          type: textfield
-          hierarchy: false
-          limit: true
-          error_message: true
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: general_news
       query:
         type: views_query
         options:
@@ -569,18 +559,7 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships:
-        nid:
-          id: nid
-          table: node_field_revision
-          field: nid
-          relationship: none
-          group_type: group
-          admin_label: 'Get the actual content from a content revision.'
-          entity_type: node
-          entity_field: nid
-          plugin_id: standard
-          required: false
+      relationships: {  }
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -589,7 +568,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -610,7 +588,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

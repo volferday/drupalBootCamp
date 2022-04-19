@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.latest_news
     - field.storage.node.field_dateofpublish
     - field.storage.node.field_media_
     - field.storage.node.field_title_of_news
@@ -315,12 +316,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: latest_news
       query:
         type: views_query
         options:

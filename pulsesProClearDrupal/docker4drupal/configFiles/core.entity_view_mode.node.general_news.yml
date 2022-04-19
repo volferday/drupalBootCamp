@@ -1,0 +1,10 @@
+uuid: 1554ca3b-aae0-4124-ac48-c7ebe0321440
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.general_news
+label: 'General news'
+targetEntityType: node
+cache: true
