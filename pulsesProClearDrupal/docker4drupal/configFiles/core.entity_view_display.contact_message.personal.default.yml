@@ -1,0 +1,21 @@
+uuid: 7308b96f-042f-4a31-b855-fc2abb18b206
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.field.contact_message.personal.field_your_email_adress
+id: contact_message.personal.default
+targetEntityType: contact_message
+bundle: personal
+mode: default
+content:
+  field_your_email_adress:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  message: true

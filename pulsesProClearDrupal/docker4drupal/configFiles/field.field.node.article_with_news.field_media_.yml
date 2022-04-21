@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_media_
+    - media.type.audio
     - media.type.image
     - node.type.article_with_news
 id: node.article_with_news.field_media_
@@ -20,6 +21,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
+      audio: audio
       image: image
     sort:
       field: _none

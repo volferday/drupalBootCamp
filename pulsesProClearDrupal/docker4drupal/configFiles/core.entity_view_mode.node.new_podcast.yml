@@ -1,0 +1,10 @@
+uuid: ad88b940-7813-4e19-a802-bef03dbb0f7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.new_podcast
+label: 'New podcast'
+targetEntityType: node
+cache: true
