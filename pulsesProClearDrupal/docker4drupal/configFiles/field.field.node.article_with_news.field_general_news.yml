@@ -1,0 +1,23 @@
+uuid: f140402b-8662-4a06-bace-32bc4f1b771f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_general_news
+    - node.type.article_with_news
+id: node.article_with_news.field_general_news
+field_name: field_general_news
+entity_type: node
+bundle: article_with_news
+label: 'General news'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

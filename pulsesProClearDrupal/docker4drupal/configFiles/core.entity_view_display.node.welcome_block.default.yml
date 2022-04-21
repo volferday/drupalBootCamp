@@ -1,0 +1,143 @@
+uuid: 5b413fa2-f73d-488a-b177-f4d4547dac25
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.welcome_block
+    - views.view.businessfrontpage
+    - views.view.editorpicks
+    - views.view.homepage
+    - views.view.new_podcast
+    - views.view.news_list_at_general_block
+    - views.view.subscribe
+  content:
+    - 'block_content:basic:f5461a54-20b2-4ddf-a519-b21571980e47'
+  module:
+    - block_content
+    - layout_builder
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-25-25
+        components:
+          ace206dd-03b1-40be-ae9e-b1d715432edf:
+            uuid: ace206dd-03b1-40be-ae9e-b1d715432edf
+            region: first
+            configuration:
+              id: 'views_block:homepage-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          cb0224e9-81ef-441a-bcab-4bbf0f31fdd4:
+            uuid: cb0224e9-81ef-441a-bcab-4bbf0f31fdd4
+            region: second
+            configuration:
+              id: 'views_block:news_list_at_general_block-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          48e7bc1b-ff64-46b5-904a-7a39e375fce0:
+            uuid: 48e7bc1b-ff64-46b5-904a-7a39e375fce0
+            region: third
+            configuration:
+              id: 'views_block:editorpicks-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          f6ce555f-1809-4d5a-a993-0ac03678c756:
+            uuid: f6ce555f-1809-4d5a-a993-0ac03678c756
+            region: third
+            configuration:
+              id: 'views_block:businessfrontpage-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          34e21687-6f26-426a-96a1-e8e060654c1f:
+            uuid: 34e21687-6f26-426a-96a1-e8e060654c1f
+            region: first
+            configuration:
+              id: 'views_block:new_podcast-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          2b4fc5dd-5d17-4372-b6a2-4f0edc529287:
+            uuid: 2b4fc5dd-5d17-4372-b6a2-4f0edc529287
+            region: second
+            configuration:
+              id: 'views_block:subscribe-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          c5eee846-1380-4755-945e-f4ee14e3eb89:
+            uuid: c5eee846-1380-4755-945e-f4ee14e3eb89
+            region: third
+            configuration:
+              id: 'block_content:f5461a54-20b2-4ddf-a519-b21571980e47'
+              label: 'Stay Connected'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.welcome_block.default
+targetEntityType: node
+bundle: welcome_block
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

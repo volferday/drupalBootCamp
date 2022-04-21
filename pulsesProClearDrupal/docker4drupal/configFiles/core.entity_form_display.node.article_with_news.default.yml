@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.article_with_news.field_comments
     - field.field.node.article_with_news.field_dateofpublish
     - field.field.node.article_with_news.field_editorpicks
+    - field.field.node.article_with_news.field_general_news
+    - field.field.node.article_with_news.field_is_podcast
     - field.field.node.article_with_news.field_media_
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
@@ -72,6 +74,20 @@ content:
   field_editorpicks:
     type: boolean_checkbox
     weight: 129
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_general_news:
+    type: boolean_checkbox
+    weight: 131
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_is_podcast:
+    type: boolean_checkbox
+    weight: 130
     region: content
     settings:
       display_label: true

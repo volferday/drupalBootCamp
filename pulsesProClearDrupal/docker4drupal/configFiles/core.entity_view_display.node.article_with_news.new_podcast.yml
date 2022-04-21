@@ -1,9 +1,9 @@
-uuid: 3032360d-ef28-4378-98e3-6520c3a6fad7
+uuid: 63cfd68b-2b67-457b-81ae-c6ba5a9e8427
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.new_podcast
     - field.field.node.article_with_news.body
     - field.field.node.article_with_news.field_author
     - field.field.node.article_with_news.field_category_
@@ -17,34 +17,46 @@ dependencies:
     - field.field.node.article_with_news.field_title_of_news
     - node.type.article_with_news
   module:
+    - datetime
     - text
     - user
-id: node.article_with_news.teaser
+id: node.article_with_news.new_podcast
 targetEntityType: node
 bundle: article_with_news
-mode: teaser
+mode: new_podcast
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
+  field_author:
+    type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
+    region: content
+  field_dateofpublish:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
-  field_author: true
+  body: true
   field_category_: true
   field_comments: true
-  field_dateofpublish: true
   field_editorpicks: true
   field_general_news: true
   field_is_podcast: true
-  field_media_: true
   field_short_description: true
   field_title_of_news: true
+  links: true

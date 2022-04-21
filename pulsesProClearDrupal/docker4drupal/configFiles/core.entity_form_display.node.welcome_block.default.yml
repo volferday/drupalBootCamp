@@ -1,0 +1,45 @@
+uuid: 6a20bde4-4443-4a57-b2d0-f17504eca3e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.welcome_block
+  module:
+    - path
+id: node.welcome_block.default
+targetEntityType: node
+bundle: welcome_block
+mode: default
+content:
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true
