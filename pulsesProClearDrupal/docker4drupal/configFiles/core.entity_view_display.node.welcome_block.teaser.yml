@@ -1,0 +1,20 @@
+uuid: 070a4d78-bc03-4d14-b24b-5a4d6e11433e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.welcome_block
+  module:
+    - user
+id: node.welcome_block.teaser
+targetEntityType: node
+bundle: welcome_block
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

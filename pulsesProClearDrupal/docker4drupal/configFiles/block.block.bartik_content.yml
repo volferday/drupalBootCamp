@@ -1,6 +1,6 @@
 uuid: 7e5d1013-63b9-4619-99d8-48ca79a894c9
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
 id: bartik_content
 theme: bartik
-region: content
-weight: -2
+region: footer_fifth
+weight: -7
 provider: null
 plugin: system_main_block
 settings:
