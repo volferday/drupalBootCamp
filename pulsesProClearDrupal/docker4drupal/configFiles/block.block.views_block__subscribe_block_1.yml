@@ -1,22 +1,22 @@
-uuid: d593339a-96bc-4023-b3a0-36e60f7544a0
+uuid: 62c89ef7-64dd-49cf-a4b2-88884fd6a78e
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_list_at_general_block
+    - views.view.subscribe
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__news_list_at_general_block_block_1
+id: views_block__subscribe_block_1
 theme: bartik
 region: content
-weight: -6
+weight: -4
 provider: null
-plugin: 'views_block:news_list_at_general_block-block_1'
+plugin: 'views_block:subscribe-block_1'
 settings:
-  id: 'views_block:news_list_at_general_block-block_1'
+  id: 'views_block:subscribe-block_1'
   label: ''
   label_display: '0'
   provider: views

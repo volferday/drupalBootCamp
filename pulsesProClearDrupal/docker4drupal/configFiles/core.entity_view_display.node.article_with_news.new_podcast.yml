@@ -30,7 +30,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_dateofpublish:
     type: datetime_default
@@ -39,7 +39,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_media_:
     type: entity_reference_entity_view
@@ -48,14 +48,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_title_of_news:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
 hidden:
   body: true
@@ -65,4 +58,5 @@ hidden:
   field_general_news: true
   field_is_podcast: true
   field_short_description: true
+  field_title_of_news: true
   links: true

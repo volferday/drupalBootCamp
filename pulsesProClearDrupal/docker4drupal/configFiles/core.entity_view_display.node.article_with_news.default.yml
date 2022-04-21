@@ -67,6 +67,16 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_editorpicks:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_general_news:
     type: boolean
     label: above
@@ -76,16 +86,6 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     weight: 7
-    region: content
-  field_is_podcast:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 6
     region: content
   field_media_:
     type: media_thumbnail
@@ -97,7 +97,7 @@ content:
     weight: 3
     region: content
 hidden:
-  field_editorpicks: true
+  field_is_podcast: true
   field_short_description: true
   field_title_of_news: true
   links: true

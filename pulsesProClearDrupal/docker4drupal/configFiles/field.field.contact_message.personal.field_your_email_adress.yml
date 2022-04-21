@@ -1,0 +1,19 @@
+uuid: 565cae29-8495-4d25-b4ae-47c45551f4d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_your_email_adress
+id: contact_message.personal.field_your_email_adress
+field_name: field_your_email_adress
+entity_type: contact_message
+bundle: personal
+label: 'Your email adress'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
