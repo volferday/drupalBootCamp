@@ -1,0 +1,22 @@
+uuid: 9bb03f3d-fd99-4678-879f-8ec866396841
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.politics_block.layout_builder__layout
+    - node.type.politics_block
+  module:
+    - user
+id: node.politics_block.teaser
+targetEntityType: node
+bundle: politics_block
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true
