@@ -19,8 +19,80 @@ dependencies:
     - node.type.article_with_news
   module:
     - datetime
+    - layout_builder
     - media
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          cf79f26e-84aa-496e-b975-94dd0419b6ed:
+            uuid: cf79f26e-84aa-496e-b975-94dd0419b6ed
+            region: first
+            configuration:
+              id: 'field_block:node:article_with_news:field_title_of_news'
+              label: 'Title of News'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b107b6d6-8e78-457c-ade9-6497a8c54919:
+            uuid: b107b6d6-8e78-457c-ade9-6497a8c54919
+            region: first
+            configuration:
+              id: 'field_block:node:article_with_news:field_dateofpublish'
+              label: DateOfPublish
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          a4d26980-0bb5-4f7a-9435-894ac53d522b:
+            uuid: a4d26980-0bb5-4f7a-9435-894ac53d522b
+            region: second
+            configuration:
+              id: 'field_block:node:article_with_news:field_media_'
+              label: 'Media '
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.article_with_news.latest_news
 targetEntityType: node
 bundle: article_with_news
