@@ -20,9 +20,15 @@ dependencies:
   module:
     - comment
     - datetime
+    - layout_builder
+    - layout_discovery
     - media
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: node.article_with_news.default
 targetEntityType: node
 bundle: article_with_news

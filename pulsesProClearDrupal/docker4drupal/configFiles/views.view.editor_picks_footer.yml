@@ -1,16 +1,16 @@
-uuid: 0f378330-9a7d-4de0-a669-0a4732dc0eed
+uuid: 2b59d1b2-c8ba-48d8-8ca3-76ba699def37
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.article_list
+    - core.entity_view_mode.node.latest_news
     - node.type.article_with_news
   module:
     - datetime
     - node
     - user
-id: news_list_at_general_block
-label: 'News list at general block'
+id: editor_picks_footer
+label: 'Editor Picks Footer'
 module: views
 description: ''
 tag: ''
@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'News list at general block'
+      title: 'Editor Picks Footer'
       fields:
         title:
           id: title
@@ -91,8 +91,8 @@ display:
       pager:
         type: some
         options:
-          offset: 2
-          items_per_page: 3
+          offset: 1
+          items_per_page: 2
       exposed_form:
         type: basic
         options:
@@ -112,6 +112,22 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
         field_dateofpublish_value:
           id: field_dateofpublish_value
           table: node__field_dateofpublish
@@ -183,13 +199,51 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_editorpicks_value:
+          id: field_editorpicks_value
+          table: node__field_editorpicks
+          field: field_editorpicks_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: article_list
+          view_mode: latest_news
       query:
         type: views_query
         options:
@@ -199,7 +253,20 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p style="color:#febe2b;font-size:24px"><b>Editor Picks</b></p>'
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:

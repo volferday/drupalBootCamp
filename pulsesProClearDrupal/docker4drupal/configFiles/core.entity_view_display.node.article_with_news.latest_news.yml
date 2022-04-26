@@ -20,8 +20,81 @@ dependencies:
     - node.type.article_with_news
   module:
     - datetime
+    - layout_builder
     - media
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Editor Picks'
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          5c27613d-b30a-4f07-bb48-64d54e5f46e6:
+            uuid: 5c27613d-b30a-4f07-bb48-64d54e5f46e6
+            region: first
+            configuration:
+              id: 'field_block:node:article_with_news:field_dateofpublish'
+              label: DateOfPublish
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          cb3d0a8c-2faf-4ef9-a6a8-a7b813394750:
+            uuid: cb3d0a8c-2faf-4ef9-a6a8-a7b813394750
+            region: second
+            configuration:
+              id: 'field_block:node:article_with_news:field_media_'
+              label: 'Media '
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          3bad6ee3-b90c-4dd1-8949-cadff5a65dc8:
+            uuid: 3bad6ee3-b90c-4dd1-8949-cadff5a65dc8
+            region: first
+            configuration:
+              id: 'field_block:node:article_with_news:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: node.article_with_news.latest_news
 targetEntityType: node
 bundle: article_with_news

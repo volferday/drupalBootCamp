@@ -1,21 +1,21 @@
-uuid: fd3344f9-7c51-4f96-8f6d-7068e5547953
+uuid: 3098d3a7-83e5-4768-af1a-5e17112fc102
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.footer_first_
+    - views.view.editor_picks_footer
   module:
     - views
   theme:
     - bartik
-id: views_block__footer_first__block_1
+id: views_block__editor_picks_footer_block_1
 theme: bartik
-region: footer_first
+region: footer_fourth
 weight: 0
 provider: null
-plugin: 'views_block:footer_first_-block_1'
+plugin: 'views_block:editor_picks_footer-block_1'
 settings:
-  id: 'views_block:footer_first_-block_1'
+  id: 'views_block:editor_picks_footer-block_1'
   label: ''
   label_display: '0'
   provider: views
