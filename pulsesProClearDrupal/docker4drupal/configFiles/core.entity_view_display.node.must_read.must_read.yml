@@ -1,0 +1,25 @@
+uuid: 0c73d289-c8e1-4a34-ba8f-bcb2f012fe04
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.must_read
+    - node.type.must_read
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.must_read.must_read
+targetEntityType: node
+bundle: must_read
+mode: must_read
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: d9006151-791c-4d84-b40b-d16064f25232
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Must Read'
+type: must_read
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.article_with_news.field_general_news
     - field.field.node.article_with_news.field_is_podcast
     - field.field.node.article_with_news.field_media_
+    - field.field.node.article_with_news.field_must_read
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
     - node.type.article_with_news
@@ -95,6 +96,16 @@ content:
       image_style: ''
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_must_read:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 8
     region: content
 hidden:
   field_is_podcast: true
