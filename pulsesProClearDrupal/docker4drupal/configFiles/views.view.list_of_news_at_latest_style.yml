@@ -1,9 +1,9 @@
-uuid: 97cce1f6-a0dc-446f-9aea-264f511fad9f
+uuid: 0e06c91f-167c-4df8-9ea3-b55e0a5e4b3e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.general_for_latest_style
+    - core.entity_view_mode.node.article_list
     - node.type.article_with_news
     - taxonomy.vocabulary.news_category
   content:
@@ -13,8 +13,8 @@ dependencies:
     - node
     - taxonomy
     - user
-id: general_at_latest_style
-label: 'General at latest style'
+id: list_of_news_at_latest_style
+label: 'List of news at latest style'
 module: views
 description: ''
 tag: ''
@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'General at latest style'
+      title: 'List of news at latest style'
       fields:
         title:
           id: title
@@ -96,7 +96,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -124,7 +124,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: datetime
-          order: DESC
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
@@ -187,52 +187,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            7: 7
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: news_category
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
         field_is_podcast_value:
           id: field_is_podcast_value
           table: node__field_is_podcast
@@ -271,13 +225,59 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 7
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: news_category
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: default
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: general_for_latest_style
+          view_mode: article_list
       query:
         type: views_query
         options:
