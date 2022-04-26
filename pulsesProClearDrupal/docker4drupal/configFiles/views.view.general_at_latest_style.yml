@@ -287,7 +287,20 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<span style=\"color:#4c4084; font-size:24px\"><b>Style</b></span>\r\n<p style=\"color:blue; font-size:90px;\"><b>LATEST</b></p>\r\n"
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
