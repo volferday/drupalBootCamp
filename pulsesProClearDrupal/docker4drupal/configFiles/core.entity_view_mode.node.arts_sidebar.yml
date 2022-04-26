@@ -1,0 +1,10 @@
+uuid: afa53dc6-37fd-45d6-ad1c-c3974a32d5ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.arts_sidebar
+label: 'Arts sidebar'
+targetEntityType: node
+cache: true
