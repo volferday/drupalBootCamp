@@ -1,22 +1,22 @@
-uuid: 1b4c7cf5-b4b6-41ab-9fb5-133f791c7930
+uuid: aef04538-5630-4f2d-86b1-43906f2d114a
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.must_read_block
+    - views.view.latest_style
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__must_read_block_block_1
+id: views_block__latest_style_block_1
 theme: bartik
 region: content
-weight: -5
+weight: -4
 provider: null
-plugin: 'views_block:must_read_block-block_1'
+plugin: 'views_block:latest_style-block_1'
 settings:
-  id: 'views_block:must_read_block-block_1'
+  id: 'views_block:latest_style-block_1'
   label: ''
   label_display: '0'
   provider: views

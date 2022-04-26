@@ -95,7 +95,7 @@ display:
       pager:
         type: some
         options:
-          offset: 0
+          offset: 1
           items_per_page: 3
       exposed_form:
         type: basic
@@ -124,7 +124,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: datetime
-          order: ASC
+          order: DESC
           expose:
             label: ''
             field_identifier: ''
