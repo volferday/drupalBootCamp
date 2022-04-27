@@ -206,4 +206,5 @@ hidden:
   field_editorpicks: true
   field_general_news: true
   field_is_podcast: true
+  field_must_read: true
   links: true
