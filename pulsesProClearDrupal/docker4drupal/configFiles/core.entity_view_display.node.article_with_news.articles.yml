@@ -37,8 +37,8 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 33-67
         components:
-          10373073-a1e2-4c25-88ac-4cfe850eb041:
-            uuid: 10373073-a1e2-4c25-88ac-4cfe850eb041
+          589760f8-831f-4848-8969-80a0ea29fd59:
+            uuid: 589760f8-831f-4848-8969-80a0ea29fd59
             region: first
             configuration:
               id: 'field_block:node:article_with_news:field_media_'
@@ -57,8 +57,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          7203f235-6d2b-45d6-bdef-023855daceef:
-            uuid: 7203f235-6d2b-45d6-bdef-023855daceef
+          03ced668-39cb-4c00-aa48-6a1d7881a4c9:
+            uuid: 03ced668-39cb-4c00-aa48-6a1d7881a4c9
             region: second
             configuration:
               id: 'field_block:node:article_with_news:field_title_of_news'
@@ -75,8 +75,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          eb730b90-611f-46c3-8556-9525ac2d19ba:
-            uuid: eb730b90-611f-46c3-8556-9525ac2d19ba
+          e0109e9d-8914-42c6-9b65-60b1c6fee671:
+            uuid: e0109e9d-8914-42c6-9b65-60b1c6fee671
             region: second
             configuration:
               id: 'field_block:node:article_with_news:field_author'
@@ -93,8 +93,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          b6456e6d-1c8b-40ef-8026-96caf6273ecc:
-            uuid: b6456e6d-1c8b-40ef-8026-96caf6273ecc
+          78146813-c225-48fd-9d53-fdf88bdf4d46:
+            uuid: 78146813-c225-48fd-9d53-fdf88bdf4d46
             region: second
             configuration:
               id: 'field_block:node:article_with_news:field_dateofpublish'
@@ -113,8 +113,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          da76b509-d1d4-49ad-bb6f-657e30a5a48a:
-            uuid: da76b509-d1d4-49ad-bb6f-657e30a5a48a
+          e86f5fce-1e20-432b-9945-54984f053558:
+            uuid: e86f5fce-1e20-432b-9945-54984f053558
             region: second
             configuration:
               id: 'field_block:node:article_with_news:field_short_description'
@@ -126,7 +126,7 @@ third_party_settings:
                 view_mode: view_mode
               formatter:
                 type: text_default
-                label: hidden
+                label: above
                 settings: {  }
                 third_party_settings: {  }
             weight: 3
