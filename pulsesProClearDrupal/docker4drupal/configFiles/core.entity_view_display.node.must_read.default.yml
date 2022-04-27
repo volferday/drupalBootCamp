@@ -1,0 +1,19 @@
+uuid: 27d69fef-95d5-4f72-8819-668aee6f8464
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.must_read
+  module:
+    - user
+id: node.must_read.default
+targetEntityType: node
+bundle: must_read
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

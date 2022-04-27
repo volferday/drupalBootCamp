@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.article_with_news.field_general_news
     - field.field.node.article_with_news.field_is_podcast
     - field.field.node.article_with_news.field_media_
+    - field.field.node.article_with_news.field_must_read
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
     - image.style.thumbnail
@@ -124,6 +125,7 @@ hidden:
   field_editorpicks: true
   field_general_news: true
   field_is_podcast: true
+  field_must_read: true
   field_short_description: true
   field_title_of_news: true
   links: true

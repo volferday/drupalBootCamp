@@ -1,0 +1,23 @@
+uuid: ecb5e33d-4313-41e6-86e1-0edfb9ab54b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_must_read
+    - node.type.article_with_news
+id: node.article_with_news.field_must_read
+field_name: field_must_read
+entity_type: node
+bundle: article_with_news
+label: 'Must Read'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean
