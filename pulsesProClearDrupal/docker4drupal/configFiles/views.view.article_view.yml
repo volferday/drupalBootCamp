@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.article_list
+    - core.entity_view_mode.node.articles
     - node.type.article_with_news
     - taxonomy.vocabulary.news_category
   content:
@@ -243,7 +244,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: article_list
+          view_mode: articles
       query:
         type: views_query
         options:
@@ -539,8 +540,10 @@ display:
           1: AND
       defaults:
         title: false
+        relationships: false
         filters: false
         filter_groups: false
+      relationships: {  }
       display_description: ''
       display_extenders: {  }
       path: category/magazine

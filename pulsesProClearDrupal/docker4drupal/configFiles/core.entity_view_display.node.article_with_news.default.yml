@@ -21,7 +21,6 @@ dependencies:
     - comment
     - datetime
     - layout_builder
-    - layout_discovery
     - media
     - text
     - user
