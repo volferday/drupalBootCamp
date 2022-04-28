@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.article_type.field_conclusion
     - field.field.paragraph.article_type.field_end_text_part
     - field.field.paragraph.article_type.field_media_second
-    - field.field.paragraph.article_type.field_photo
     - field.field.paragraph.article_type.field_text_part
     - paragraphs.paragraphs_type.article_type
   module:
@@ -25,26 +24,6 @@ third_party_settings:
           label: ''
           context_mapping: {  }
         components:
-          c30d334a-adab-4872-9668-f7e9fca07284:
-            uuid: c30d334a-adab-4872-9668-f7e9fca07284
-            region: content
-            configuration:
-              id: 'field_block:paragraph:article_type:field_photo'
-              label: Photo
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: media_thumbnail
-                label: hidden
-                settings:
-                  image_link: ''
-                  image_style: wide
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           4854a819-30fe-4a69-832a-87162f6e7c03:
             uuid: 4854a819-30fe-4a69-832a-87162f6e7c03
             region: content
@@ -187,15 +166,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 3
-    region: content
-  field_photo:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 1
     region: content
   field_text_part:
     type: text_default

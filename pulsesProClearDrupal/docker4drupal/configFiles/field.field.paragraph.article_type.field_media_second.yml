@@ -10,7 +10,7 @@ id: paragraph.article_type.field_media_second
 field_name: field_media_second
 entity_type: paragraph
 bundle: article_type
-label: 'Media second'
+label: Photo
 description: ''
 required: false
 translatable: false
