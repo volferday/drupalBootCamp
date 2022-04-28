@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.header.field_facebook
     - field.field.node.header.field_twitter
     - field.field.node.header.field_youtube
+    - field.field.node.header.layout_builder__layout
     - node.type.header
   module:
     - user
@@ -26,3 +27,4 @@ hidden:
   field_facebook: true
   field_twitter: true
   field_youtube: true
+  layout_builder__layout: true

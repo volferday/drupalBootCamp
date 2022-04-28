@@ -1,15 +1,14 @@
-uuid: 6584a4ed-f392-4d1d-9e63-b8d468ce2eeb
+uuid: 76ae14b8-4f46-4673-a16f-f2b64cf52203
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
-    - node.type.welcome_block
+    - node.type.header
   module:
     - node
     - user
-id: welcome_block
-label: 'Welcome block'
+id: header
+label: Header
 module: views
 description: ''
 tag: ''
@@ -22,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Welcome block'
+      title: Header
       fields:
         title:
           id: title
@@ -91,7 +90,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 5
       exposed_form:
         type: basic
         options:
@@ -154,7 +153,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            welcome_block: welcome_block
+            header: header
           group: 1
           exposed: false
           expose:
@@ -190,7 +189,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: full
+          view_mode: default
       query:
         type: views_query
         options:
