@@ -1,0 +1,17 @@
+uuid: af24fa1e-975d-4208-be20-8bb5fcbb7850
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Politics block'
+type: politics_block
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
