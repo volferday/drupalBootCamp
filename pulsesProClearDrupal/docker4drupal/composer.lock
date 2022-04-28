@@ -5034,7 +5034,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "drupal/auto_entitylabel": 10
+        "drupal/auto_entitylabel": 10,
         "drupal/page_manager": 20
     },
     "prefer-stable": true,
