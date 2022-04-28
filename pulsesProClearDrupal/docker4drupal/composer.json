@@ -19,7 +19,8 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
-        "drupal/page_manager": "4.x-dev@dev"
+        "drupal/page_manager": "4.x-dev@dev",
+        "drupal/paragraphs": "^1.14"
     },
     "conflict": {
         "drupal/drupal": "*"
