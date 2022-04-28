@@ -1,0 +1,31 @@
+uuid: acce51f8-26c6-4aac-9ea0-f54afd3277dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_content
+    - node.type.article_with_news
+    - paragraphs.paragraphs_type.article_type
+  module:
+    - entity_reference_revisions
+id: node.article_with_news.field_main_content
+field_name: field_main_content
+entity_type: node
+bundle: article_with_news
+label: 'Main content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      article_type: article_type
+    negate: 0
+    target_bundles_drag_drop:
+      article_type:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
