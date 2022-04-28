@@ -1,0 +1,10 @@
+uuid: 2b541229-83d4-46a5-a127-4cf9c205513e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.general_for_latest_style
+label: 'General for latest style'
+targetEntityType: node
+cache: true
