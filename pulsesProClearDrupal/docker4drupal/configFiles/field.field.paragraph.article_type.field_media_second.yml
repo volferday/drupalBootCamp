@@ -1,0 +1,29 @@
+uuid: 2c50629c-12e8-45d2-a957-a46c874c706c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_second
+    - media.type.image
+    - paragraphs.paragraphs_type.article_type
+id: paragraph.article_type.field_media_second
+field_name: field_media_second
+entity_type: paragraph
+bundle: article_type
+label: 'Media second'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

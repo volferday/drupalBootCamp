@@ -1,0 +1,21 @@
+uuid: 1e5ee425-6173-4e13-892f-94bd689f338c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_end_text_part
+    - paragraphs.paragraphs_type.article_type
+  module:
+    - text
+id: paragraph.article_type.field_end_text_part
+field_name: field_end_text_part
+entity_type: paragraph
+bundle: article_type
+label: 'End text part'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

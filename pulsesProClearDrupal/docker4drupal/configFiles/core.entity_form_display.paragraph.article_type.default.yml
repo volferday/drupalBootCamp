@@ -1,0 +1,74 @@
+uuid: f4cd8061-5f14-4d93-bfa5-1c723d41f7bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_type.field_cite
+    - field.field.paragraph.article_type.field_conclusion
+    - field.field.paragraph.article_type.field_end_text_part
+    - field.field.paragraph.article_type.field_media_second
+    - field.field.paragraph.article_type.field_photo
+    - field.field.paragraph.article_type.field_text_part
+    - paragraphs.paragraphs_type.article_type
+  module:
+    - text
+id: paragraph.article_type.default
+targetEntityType: paragraph
+bundle: article_type
+mode: default
+content:
+  field_cite:
+    type: text_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_conclusion:
+    type: text_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_end_text_part:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_second:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_photo:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_part:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
