@@ -1,0 +1,103 @@
+uuid: 3c67b419-ecb5-4255-91f8-9f10c0df7a45
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.node.politics_block.layout_builder__layout
+    - node.type.politics_block
+    - views.view.culture_sidebar
+    - views.view.magazine_sidebar
+    - views.view.politics
+    - views.view.sport_sidebar
+  module:
+    - layout_builder
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          06b06041-33a5-4848-a8ee-67ed0878967b:
+            uuid: 06b06041-33a5-4848-a8ee-67ed0878967b
+            region: second
+            configuration:
+              id: 'views_block:politics-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          9dc69941-039b-4eec-a25e-a223c11379b6:
+            uuid: 9dc69941-039b-4eec-a25e-a223c11379b6
+            region: third
+            configuration:
+              id: 'views_block:sport_sidebar-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          9cff6370-2f0d-487d-9572-2d314b47a036:
+            uuid: 9cff6370-2f0d-487d-9572-2d314b47a036
+            region: third
+            configuration:
+              id: 'inline_block:basic'
+              label: advertisment
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 7
+              block_serialized: null
+            weight: 1
+            additional: {  }
+          a795523e-d04c-4e6f-b004-c7069e8e980c:
+            uuid: a795523e-d04c-4e6f-b004-c7069e8e980c
+            region: third
+            configuration:
+              id: 'views_block:culture_sidebar-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          c8c32bf0-3ac7-47bc-a221-afb238c00770:
+            uuid: c8c32bf0-3ac7-47bc-a221-afb238c00770
+            region: first
+            configuration:
+              id: 'views_block:magazine_sidebar-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.politics_block.default
+targetEntityType: node
+bundle: politics_block
+mode: default
+content: {  }
+hidden:
+  layout_builder__layout: true
+  links: true
