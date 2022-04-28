@@ -3,15 +3,75 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - field.field.node.header.field_date
     - field.field.node.header.field_facebook
     - field.field.node.header.field_twitter
     - field.field.node.header.field_youtube
+    - field.field.node.header.layout_builder__layout
     - node.type.header
+  content:
+    - 'block_content:basic:07ec350e-067f-474a-a3d5-4ae21e0d5fbb'
   module:
+    - block_content
     - datetime
+    - layout_builder
     - link
+    - search
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          60c8c768-9323-43ad-973b-37593f91e14f:
+            uuid: 60c8c768-9323-43ad-973b-37593f91e14f
+            region: first
+            configuration:
+              id: 'block_content:07ec350e-067f-474a-a3d5-4ae21e0d5fbb'
+              label: Weather
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+          13fd3aff-79c1-466f-9df8-53c5ea0420a8:
+            uuid: 13fd3aff-79c1-466f-9df8-53c5ea0420a8
+            region: second
+            configuration:
+              id: 'inline_block:basic'
+              label: Header
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 11
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          c5a78a92-a249-459d-9b4c-86225f456f2a:
+            uuid: c5a78a92-a249-459d-9b4c-86225f456f2a
+            region: third
+            configuration:
+              id: search_form_block
+              label: 'Search form'
+              label_display: '0'
+              provider: search
+              context_mapping: {  }
+              page_id: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.header.default
 targetEntityType: node
 bundle: header
@@ -67,4 +127,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true

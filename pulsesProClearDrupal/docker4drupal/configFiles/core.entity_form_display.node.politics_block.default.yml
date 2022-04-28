@@ -1,21 +1,15 @@
-uuid: 50daa4c2-c1e8-4626-a6cd-f442a8095b39
+uuid: 7ddc9d4d-fd96-45d1-a30b-497ee0ec86e7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.header.field_date
-    - field.field.node.header.field_facebook
-    - field.field.node.header.field_twitter
-    - field.field.node.header.field_youtube
-    - field.field.node.header.layout_builder__layout
-    - node.type.header
+    - field.field.node.politics_block.layout_builder__layout
+    - node.type.politics_block
   module:
-    - datetime
-    - link
     - path
-id: node.header.default
+id: node.politics_block.default
 targetEntityType: node
-bundle: header
+bundle: politics_block
 mode: default
 content:
   created:
@@ -23,36 +17,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_date:
-    type: datetime_default
-    weight: 125
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_facebook:
-    type: link_default
-    weight: 131
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_twitter:
-    type: link_default
-    weight: 129
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_youtube:
-    type: link_default
-    weight: 130
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
     third_party_settings: {  }
   path:
     type: path
