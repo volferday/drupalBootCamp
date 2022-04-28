@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.latest_news
     - field.storage.node.field_dateofpublish
     - field.storage.node.field_media_
     - image.style.thumbnail
@@ -364,6 +365,44 @@ display:
           hierarchy: false
           limit: true
           error_message: true
+        field_is_podcast_value:
+          id: field_is_podcast_value
+          table: node__field_is_podcast
+          field: field_is_podcast_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '!='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
         options:
@@ -371,7 +410,10 @@ display:
           row_class: ''
           default_row_class: true
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: latest_news
       query:
         type: views_query
         options:

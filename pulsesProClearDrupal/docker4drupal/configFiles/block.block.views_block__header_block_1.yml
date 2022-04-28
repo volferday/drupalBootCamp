@@ -1,23 +1,23 @@
-uuid: 5008a4ef-3920-4cc0-af7c-7930a04e2f37
+uuid: 8732b6e1-0266-4b82-adc1-66760f472757
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.header_view
+    - views.view.header
   module:
     - views
   theme:
     - bartik
-id: views_block__header_view_block_1_2
+id: views_block__header_block_1
 theme: bartik
 region: header
 weight: 0
 provider: null
-plugin: 'views_block:header_view-block_1'
+plugin: 'views_block:header-block_1'
 settings:
-  id: 'views_block:header_view-block_1'
+  id: 'views_block:header-block_1'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   views_label: ''
   items_per_page: none
