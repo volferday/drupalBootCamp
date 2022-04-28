@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "content-hash": "225f791aeab466a0188897a03ce74c7b",
+    "content-hash": "01e653981644af0040783763bef3cd8f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5034,6 +5035,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/auto_entitylabel": 10
+        "drupal/page_manager": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
