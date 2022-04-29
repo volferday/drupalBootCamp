@@ -1,0 +1,21 @@
+uuid: 3512916a-51b5-4e9f-a66a-7d03eb9f0981
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_conclusion
+    - paragraphs.paragraphs_type.article_type
+  module:
+    - text
+id: paragraph.article_type.field_conclusion
+field_name: field_conclusion
+entity_type: paragraph
+bundle: article_type
+label: Conclusion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

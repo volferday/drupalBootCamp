@@ -1,0 +1,12 @@
+uuid: 1098e28d-6efc-44c6-9074-6fb1bbbfba86
+langcode: en
+status: true
+dependencies: {  }
+id: node_page
+label: 'Node page'
+description: ''
+use_admin_theme: false
+path: '/node/{node}'
+access_logic: and
+access_conditions: {  }
+parameters: {  }

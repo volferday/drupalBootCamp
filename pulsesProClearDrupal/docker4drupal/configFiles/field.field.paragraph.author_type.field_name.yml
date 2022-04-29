@@ -1,0 +1,21 @@
+uuid: 5db67818-f68a-4a51-8d05-bba31da13080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.author_type
+  module:
+    - text
+id: paragraph.author_type.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: author_type
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
