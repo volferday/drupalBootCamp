@@ -148,10 +148,10 @@ third_party_settings:
         layout_settings:
           label: ''
           context_mapping: {  }
-          column_widths: 33-67
+          column_widths: 25-75
         components:
-          30041804-c3b2-4d15-82e1-03bcd719ea40:
-            uuid: 30041804-c3b2-4d15-82e1-03bcd719ea40
+          cc57bbd7-2ce7-41ee-96c5-ca8fb47a992a:
+            uuid: cc57bbd7-2ce7-41ee-96c5-ca8fb47a992a
             region: first
             configuration:
               id: 'views_block:more_articles_sidebar-block_1'
@@ -163,8 +163,8 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
-          7f597b3a-4ba3-4262-88cf-58a81266e9bf:
-            uuid: 7f597b3a-4ba3-4262-88cf-58a81266e9bf
+          52bc6ba9-6a31-4e90-b29e-80d936788b86:
+            uuid: 52bc6ba9-6a31-4e90-b29e-80d936788b86
             region: second
             configuration:
               id: 'field_block:node:article_with_news:field_comments'

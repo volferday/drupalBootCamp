@@ -1,0 +1,74 @@
+uuid: d68a00ca-888f-419f-bcbb-ec724948a116
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - page_manager.page.node_page
+    - views.view.article
+    - views.view.latest_news
+  module:
+    - layout_builder
+    - views
+id: node_page-layout_builder-0
+label: 'Layout Builder'
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: e33bf439-35bf-424a-a0dd-a6f21e9754c5
+  sections:
+    -
+      layout_id: layout_twocol_section
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        column_widths: 75-25
+      components:
+        e32fb88d-98d4-41a4-9736-7f60dd164612:
+          uuid: e32fb88d-98d4-41a4-9736-7f60dd164612
+          region: first
+          configuration:
+            id: 'views_block:article-block_1'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 0
+          additional: {  }
+        e9e4d4fe-a7c3-4bfb-9e58-7a949b30a58d:
+          uuid: e9e4d4fe-a7c3-4bfb-9e58-7a949b30a58d
+          region: second
+          configuration:
+            id: 'views_block:latest_news-block_1'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 1
+          additional: {  }
+        8a044720-700f-437d-8d9e-8e51bbd75dbe:
+          uuid: 8a044720-700f-437d-8d9e-8e51bbd75dbe
+          region: second
+          configuration:
+            id: 'inline_block:basic'
+            label: advertisment
+            label_display: '0'
+            provider: layout_builder
+            view_mode: full
+            context_mapping: {  }
+            block_revision_id: 14
+            block_serialized: null
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: node_page
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
