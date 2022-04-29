@@ -1,22 +1,22 @@
-uuid: ab923451-193e-4975-b159-b3e09693081e
+uuid: aef04538-5630-4f2d-86b1-43906f2d114a
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.politics_block
+    - views.view.latest_style
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__politics_block_block_1
+id: views_block__latest_style_block_1
 theme: bartik
 region: content
-weight: -4
+weight: -2
 provider: null
-plugin: 'views_block:politics_block-block_1'
+plugin: 'views_block:latest_style-block_1'
 settings:
-  id: 'views_block:politics_block-block_1'
+  id: 'views_block:latest_style-block_1'
   label: ''
   label_display: '0'
   provider: views

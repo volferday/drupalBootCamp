@@ -1,0 +1,78 @@
+uuid: 548e8d93-0343-4c7f-85d6-77d4cb7aa8f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.arts_sidebar
+    - field.field.node.article_with_news.body
+    - field.field.node.article_with_news.field_author
+    - field.field.node.article_with_news.field_category_
+    - field.field.node.article_with_news.field_comments
+    - field.field.node.article_with_news.field_dateofpublish
+    - field.field.node.article_with_news.field_editorpicks
+    - field.field.node.article_with_news.field_general_news
+    - field.field.node.article_with_news.field_is_podcast
+    - field.field.node.article_with_news.field_media_
+    - field.field.node.article_with_news.field_must_read
+    - field.field.node.article_with_news.field_short_description
+    - field.field.node.article_with_news.field_title_of_news
+    - image.style.thumbnail
+    - node.type.article_with_news
+  module:
+    - datetime
+    - layout_builder
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.article_with_news.arts_sidebar
+targetEntityType: node
+bundle: article_with_news
+mode: arts_sidebar
+content:
+  field_category_:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_dateofpublish:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_:
+    type: media_thumbnail
+    label: inline
+    settings:
+      image_link: ''
+      image_style: thumbnail
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title_of_news:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  field_author: true
+  field_comments: true
+  field_editorpicks: true
+  field_general_news: true
+  field_is_podcast: true
+  field_must_read: true
+  field_short_description: true
+  links: true
