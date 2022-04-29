@@ -30,7 +30,7 @@ mode: default
 content:
   field_author:
     type: text_textfield
-    weight: 10
+    weight: 11
     region: content
     settings:
       size: 60
@@ -48,40 +48,40 @@ content:
     third_party_settings: {  }
   field_comments:
     type: comment_default
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_dateofpublish:
     type: datetime_default
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_editorpicks:
-    type: boolean_checkbox
-    weight: 12
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_general_news:
-    type: boolean_checkbox
-    weight: 14
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_is_podcast:
     type: boolean_checkbox
     weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
+  field_general_news:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_is_podcast:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_main_content:
     type: paragraphs
-    weight: 8
+    weight: 9
     region: content
     settings:
       title: Paragraph
@@ -97,16 +97,26 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_media_:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_must_read:
     type: boolean_checkbox
-    weight: 15
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_short_description:
     type: text_textfield
-    weight: 7
+    weight: 8
     region: content
     settings:
       size: 60
@@ -158,5 +168,4 @@ content:
 hidden:
   body: true
   created: true
-  field_media_: true
   uid: true
