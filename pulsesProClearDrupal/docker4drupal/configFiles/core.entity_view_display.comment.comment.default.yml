@@ -9,7 +9,99 @@ dependencies:
     - field.field.comment.comment.field_name_of_client
     - field.field.comment.comment.field_website
   module:
+    - layout_builder
+    - layout_discovery
     - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5860c03a-70fa-4dc6-b6a1-f37176d65554:
+            uuid: 5860c03a-70fa-4dc6-b6a1-f37176d65554
+            region: content
+            configuration:
+              id: 'field_block:comment:comment:comment_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          673480fc-5b61-41dd-9586-b2b4da3f7404:
+            uuid: 673480fc-5b61-41dd-9586-b2b4da3f7404
+            region: first
+            configuration:
+              id: 'field_block:comment:comment:field_name'
+              label: 'Comment field name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9284e09a-161b-4b9f-a3d0-511c2b474110:
+            uuid: 9284e09a-161b-4b9f-a3d0-511c2b474110
+            region: second
+            configuration:
+              id: 'field_block:comment:comment:mail'
+              label: Email
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          12223657-1cd8-4fcd-b6b3-bf9b424fd1ca:
+            uuid: 12223657-1cd8-4fcd-b6b3-bf9b424fd1ca
+            region: third
+            configuration:
+              id: 'field_block:comment:comment:field_website'
+              label: Website
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: aBQUGsQ46M4048fIlFuTXwl2zV0j2cJX89CTUobh9hA
 id: comment.comment.default
@@ -48,6 +140,8 @@ content:
     weight: 103
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 100
     region: content
 hidden: {  }

@@ -163,6 +163,26 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
+          7f597b3a-4ba3-4262-88cf-58a81266e9bf:
+            uuid: 7f597b3a-4ba3-4262-88cf-58a81266e9bf
+            region: second
+            configuration:
+              id: 'field_block:node:article_with_news:field_comments'
+              label: Comments
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: comment_default
+                label: hidden
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: node.article_with_news.default
 targetEntityType: node
