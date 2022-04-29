@@ -1,0 +1,67 @@
+uuid: 71de4e74-c471-471b-9377-d55c1150fb5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.author_type.field_bio
+    - field.field.paragraph.author_type.field_name
+    - field.field.paragraph.author_type.field_profile_photo
+    - field.field.paragraph.author_type.field_social_media
+    - field.field.paragraph.author_type.field_website
+    - paragraphs.paragraphs_type.author_type
+  module:
+    - link
+    - text
+id: paragraph.author_type.default
+targetEntityType: paragraph
+bundle: author_type
+mode: default
+content:
+  field_bio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_name:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_profile_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_social_media:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

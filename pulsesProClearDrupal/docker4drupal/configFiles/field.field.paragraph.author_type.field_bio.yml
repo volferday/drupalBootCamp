@@ -1,0 +1,21 @@
+uuid: 50dbcb00-61d5-4f09-8b6a-bfc6b2cc36ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bio
+    - paragraphs.paragraphs_type.author_type
+  module:
+    - text
+id: paragraph.author_type.field_bio
+field_name: field_bio
+entity_type: paragraph
+bundle: author_type
+label: BIO
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

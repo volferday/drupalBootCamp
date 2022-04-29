@@ -1,0 +1,64 @@
+uuid: 0fd35258-0537-4c82-a1de-c573392e3ebc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.author_type.field_bio
+    - field.field.paragraph.author_type.field_name
+    - field.field.paragraph.author_type.field_profile_photo
+    - field.field.paragraph.author_type.field_social_media
+    - field.field.paragraph.author_type.field_website
+    - paragraphs.paragraphs_type.author_type
+  module:
+    - link
+    - text
+id: paragraph.author_type.default
+targetEntityType: paragraph
+bundle: author_type
+mode: default
+content:
+  field_bio:
+    type: text_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_name:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_photo:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_media:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_website:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
