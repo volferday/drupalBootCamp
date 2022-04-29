@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
     - node.type.article_with_news
+    - views.view.more_articles_sidebar
     - views.view.must_read_sidebar
   module:
     - comment
@@ -139,6 +140,27 @@ third_party_settings:
               context_mapping: {  }
               block_revision_id: 13
               block_serialized: null
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          30041804-c3b2-4d15-82e1-03bcd719ea40:
+            uuid: 30041804-c3b2-4d15-82e1-03bcd719ea40
+            region: first
+            configuration:
+              id: 'views_block:more_articles_sidebar-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
             weight: 0
             additional: {  }
         third_party_settings: {  }

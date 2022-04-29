@@ -1,4 +1,4 @@
-uuid: d7e67573-efb2-4e48-954c-b478c6085184
+uuid: 2bfa92df-be73-480a-98bf-2cc3b7aa1322
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ dependencies:
     - datetime
     - node
     - user
-id: must_read_sidebar
-label: 'Must read sidebar'
+id: more_articles_sidebar
+label: 'More articles sidebar'
 module: views
 description: ''
 tag: ''
@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Must read sidebar'
+      title: 'More articles sidebar'
       fields:
         title:
           id: title
@@ -91,8 +91,8 @@ display:
       pager:
         type: some
         options:
-          offset: 0
-          items_per_page: 4
+          offset: 5
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -153,44 +153,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_must_read_value:
-          id: field_must_read_value
-          table: node__field_must_read
-          field: field_must_read_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: boolean
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         field_is_podcast_value:
           id: field_is_podcast_value
           table: node__field_is_podcast
@@ -256,7 +218,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p style="font-size:24px; color:#4c4084;"><b>Must read</b></p>'
+            value: '<p style="color:#4c4084;font-size:24px"><b>More articles</b></p>'
             format: full_html
           tokenize: false
       footer: {  }
