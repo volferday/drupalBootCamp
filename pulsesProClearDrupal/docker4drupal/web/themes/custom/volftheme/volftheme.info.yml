@@ -9,7 +9,9 @@ stylesheets-remove:
   - '@bootstrap5/css/style.css'
 regions:
   header: Header
+  primary_menu: 'Primary menu'
   nav_branding: 'Navigation branding region'
+  secondary_menu: 'Secondary menu'
   nav_main: 'Main navigation region'
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
