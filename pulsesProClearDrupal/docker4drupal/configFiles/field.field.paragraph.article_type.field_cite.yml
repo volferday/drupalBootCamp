@@ -1,0 +1,21 @@
+uuid: 297cdcf9-2679-4b2f-8e56-473d7e25b2f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cite
+    - paragraphs.paragraphs_type.article_type
+  module:
+    - text
+id: paragraph.article_type.field_cite
+field_name: field_cite
+entity_type: paragraph
+bundle: article_type
+label: CIte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

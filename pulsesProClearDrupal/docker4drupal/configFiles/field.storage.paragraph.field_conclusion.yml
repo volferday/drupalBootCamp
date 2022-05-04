@@ -1,0 +1,20 @@
+uuid: f0e6008b-47ce-44ac-a88b-32a443b82240
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_conclusion
+field_name: field_conclusion
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

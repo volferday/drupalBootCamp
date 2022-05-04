@@ -1,0 +1,29 @@
+uuid: 435517b3-66eb-452f-a46c-aea432a89983
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_profile_photo
+    - media.type.image
+    - paragraphs.paragraphs_type.author_type
+id: paragraph.author_type.field_profile_photo
+field_name: field_profile_photo
+entity_type: paragraph
+bundle: author_type
+label: 'Profile photo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

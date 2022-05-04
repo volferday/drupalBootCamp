@@ -1,0 +1,10 @@
+uuid: dc5c828f-815f-4bb2-ae9b-9da732f9fd04
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.latest_style
+label: 'Latest style'
+targetEntityType: node
+cache: true
