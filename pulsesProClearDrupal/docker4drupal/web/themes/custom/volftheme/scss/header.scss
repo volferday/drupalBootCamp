@@ -1,6 +1,58 @@
-#block-header{
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
+
+$font: 'Gelasio', serif;
+$mainColor: black;
+
+.region-header, .navbar-nav {
+  font-family: $font;
+}
+
+.region-header {
+  border-bottom: 1px solid rgba(218, 218, 218, 0.64);
+
+  .layout__region--first {
+    .block-block-content {
+      .field--type-text-with-summary {
+        p {
+          //margin-left: -10vw;
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+
+  .layout__region--second {
+    .block-inline-blockbasic {
+      .field--type-text-with-summary {
+        p:first-child {
+          font-size: 3vw !important;
+
+          & ~ p {
+            text-align: center;
+            font-size: 1.1vw;
+            margin: -20px 0 20px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .layout__region--first {
+
+  }
+}
+
+.navbar-nav {
+  margin-top: 5px;
   text-align: center;
-  p{
-    font-size: 90px;
+  flex-direction: row;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: center;
+
+  li {
+    a {
+      color: $mainColor;
+    }
   }
 }
