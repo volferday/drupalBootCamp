@@ -11,6 +11,9 @@ const config = {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].bundle.js'
   },
+  devServer: {
+    port: 8000
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].style.css",
