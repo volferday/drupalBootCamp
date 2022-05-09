@@ -12,7 +12,18 @@ const config = {
     filename: '[name].bundle.js'
   },
   devServer: {
-    port: 8000
+    hot: true,
+    headers: { 'Access-Control-Allow-Origin': '*' },
+    proxy: {
+      '/': {
+        // index: '',
+        context: () => true,
+        target: 'http://pulses.pro.localhost:8000/',
+        changeOrigin: false,
+        publicPath: path.join(__dirname, 'dist'),
+        secure: false,
+      }
+    }
   },
   plugins: [
     new MiniCssExtractPlugin({

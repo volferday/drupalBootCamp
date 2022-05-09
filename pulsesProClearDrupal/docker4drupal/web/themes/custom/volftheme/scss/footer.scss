@@ -1,0 +1,102 @@
+$footerTextColor: white;
+$hoverLinkColor: #febe2b;
+
+@function get-vw($target,$screener) {
+  $vw-context: (1000*.01) * 1px;
+  @return ($target/$vw-context) * $screener;
+}
+
+.site-footer {
+  background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("https://demo.tagdiv.com/newspaper_pulses_pro/wp-content/uploads/2019/12/47-1.jpg") !important;
+  content: '' !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  z-index: 0 !important;
+  background-size: cover !important;
+  background-position: center top !important;
+
+  a {
+    color: $footerTextColor;
+    text-decoration: none;
+
+    &:hover {
+      color: $hoverLinkColor;
+    }
+  }
+
+  .view-header {
+    a:first-child:hover {
+      color: $footerTextColor !important;
+    }
+
+    p {
+      &:not(:first-child) {
+        font-size: get-vw(14px, 0.6vw) !important;
+        @media(max-width: 992px) {
+          font-size: get-vw(14px, 1vw) !important;
+        }
+        color: $footerTextColor !important;
+      }
+
+      &:first-child {
+        color: $hoverLinkColor !important;
+        font-size: get-vw(18px, 0.6vw) !important;
+        @media(max-width: 992px) {
+          font-size: get-vw(18px, 1vw) !important;
+        }
+        font-weight: bold;
+      }
+    }
+  }
+
+  .views-row {
+    a, span:not(:first-child) {
+      font-size: get-vw(12px, 0.6vw) !important;
+      @media(max-width: 992px) {
+        font-size: get-vw(12px, 1vw) !important;
+      }
+    }
+
+    span:not(:first-child) {
+      color: $footerTextColor !important;
+    }
+  }
+
+  .region-footer-third {
+    span:not(:first-child) {
+      float: right;
+    }
+  }
+
+  .region-footer-fourth {
+    article {
+      margin-bottom: 20px;
+
+      a {
+        display: inline-block;
+        line-height: normal !important;
+        width: 70%;
+      }
+
+      .block-field-blocknodearticle-with-newsfield-title-of-news {
+        display: none;
+      }
+
+      time {
+        color: $footerTextColor;
+        font-size: get-vw(13px, 0.6vw);
+        @media(max-width: 992px) {
+          font-size: get-vw(13px, 1vw);
+        }
+      }
+
+      img {
+        margin-top: -50px;
+        margin-left: 20px;
+        width: 80%;
+      }
+    }
+  }
+}
+
