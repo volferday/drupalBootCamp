@@ -1,0 +1,113 @@
+$footerTextColor: white;
+$hoverLinkColor: #febe2b;
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+.site-footer {
+  background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("https://demo.tagdiv.com/newspaper_pulses_pro/wp-content/uploads/2019/12/47-1.jpg") !important;
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+
+  a {
+    color: $footerTextColor;
+    text-decoration: none;
+
+    &:hover {
+      color: $hoverLinkColor;
+    }
+  }
+
+  .view-header {
+    a:first-child{
+      @media (max-width: 768px) {
+        font-size: toRem(18) !important;
+      }
+    }
+    a:first-child:hover {
+      color: $footerTextColor;
+    }
+
+    p {
+      &:not(:first-child) {
+        font-size: toRem(14);
+        @media(max-width: 992px) {
+          font-size: toRem(12) !important;
+        }
+        @media (max-width: 768px) {
+          font-size: toRem(10) !important;
+        }
+        color: $footerTextColor;
+      }
+
+      &:first-child {
+        color: $hoverLinkColor;
+        font-size: toRem(24);
+        @media(max-width: 992px) {
+          font-size: toRem(16) !important;
+        }
+        @media (max-width: 768px) {
+          font-size: toRem(14) !important;
+        }
+        font-weight: bold;
+      }
+    }
+  }
+
+  .views-row {
+    a, span:not(:first-child) {
+      font-size: toRem(14);
+      @media(max-width: 992px) {
+        font-size: toRem(11);
+      }
+    }
+
+    span:not(:first-child) {
+      color: $footerTextColor;
+    }
+  }
+
+  .region-footer-third {
+    span:not(:first-child) {
+      float: right;
+    }
+  }
+
+  .region-footer-fourth {
+    article {
+      margin-bottom: 20px;
+
+      a {
+        display: inline-block;
+        line-height: normal;
+        width: 70%;
+      }
+
+      .block-field-blocknodearticle-with-newsfield-title-of-news {
+        display: none;
+      }
+
+      time {
+        color: $footerTextColor;
+        font-size: toRem(12);
+        @media(max-width: 992px) {
+          font-size: toRem(10);
+        }
+      }
+
+      img {
+        margin-top: -50px;
+        margin-left: 20px;
+        width: 80%;
+      }
+    }
+  }
+}
+
