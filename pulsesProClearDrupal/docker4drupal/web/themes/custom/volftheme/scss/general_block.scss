@@ -1,0 +1,136 @@
+$titleColor: black;
+$titleHoverColor: #4c4084;
+$categoryColor: white;
+$shortDesc: #555555;
+$circleImgSize: toRem(50);
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+.block-views-blockwelcome-block-block-1 {
+  .view-welcome-block {
+    .view-content {
+      .views-row {
+        article {
+          .node__meta, .field__label, .field--name-field-title-of-news {
+            display: none;
+          }
+
+          a, .field--name-title {
+            text-decoration: none;
+            color: $titleColor;
+            font-size: toRem(32);
+            font-weight: 700;
+            @media(max-width: 1200px) {
+              font-size: toRem(17);
+            }
+
+            &:hover {
+              color: $titleHoverColor;
+            }
+          }
+
+          .field--name-field-author, .datetime {
+            font-size: toRem(12);
+          }
+
+          .field--name-field-short-description {
+            margin-top: 20px;
+            color: $shortDesc;
+            font-size: 12px;
+          }
+
+          .field--type-entity-reference {
+            .field__item > a {
+              padding: toRem(2) toRem(5);
+              background-color: $titleHoverColor;
+              color: $categoryColor;
+              font-size: toRem(10);
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+
+          .layout__region--first {
+            .field--name-field-author, .datetime {
+              float: left;
+            }
+
+            .datetime {
+              margin-left: toRem(5);
+            }
+          }
+
+          .layout__region--second {
+            .node__content{
+              position: relative;
+            }
+            .field--name-field-category {
+              position: absolute;
+
+            }
+
+            .field--name-field-author {
+              display: none;
+            }
+
+            .field--name-title {
+              line-height: 0.2 !important;
+              font-size: toRem(17);
+              @media(max-width: 992px) {
+                font-size: toRem(12);
+              }
+              h2{
+                margin: 0;
+                line-height: 0.2 !important;
+              }
+            }
+
+            .field--name-field-media- {
+              img {
+                width: 100%;
+                height: toRem(150);
+              }
+            }
+          }
+
+          .layout__region--third {
+            position: relative;
+
+            .field--name-field-media- {
+              position: absolute;
+              top: toRem(20);
+              right: toRem(-50);
+
+              img {
+                border-radius: toRem(100);
+                position: center;
+                width: $circleImgSize;
+                height: $circleImgSize;
+              }
+            }
+
+            .node--view-mode-latest-news {
+              width: 80%;
+
+              .field--name-title {
+                font-size: toRem(15);
+                @media (max-width: 992px) {
+                  font-size: toRem(12);
+                }
+              }
+
+              .datetime {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
