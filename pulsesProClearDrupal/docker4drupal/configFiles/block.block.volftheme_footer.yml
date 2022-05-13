@@ -1,0 +1,27 @@
+uuid: a1164b56-1c2d-45b6-b58d-e51cab9ed3c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - volftheme
+_core:
+  default_config_hash: mmBcuKlHRC8GNDGCXcPRbBQfOOYn9UwrvJXXWTcih34
+id: volftheme_footer
+theme: volftheme
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

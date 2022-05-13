@@ -195,7 +195,9 @@ content:
     weight: 8
     region: content
 hidden:
+  field_author_information: true
   field_is_podcast: true
+  field_main_content: true
   field_short_description: true
   field_title_of_news: true
   links: true

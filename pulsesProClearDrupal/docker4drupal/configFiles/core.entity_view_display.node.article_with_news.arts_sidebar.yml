@@ -69,10 +69,12 @@ content:
 hidden:
   body: true
   field_author: true
+  field_author_information: true
   field_comments: true
   field_editorpicks: true
   field_general_news: true
   field_is_podcast: true
+  field_main_content: true
   field_must_read: true
   field_short_description: true
   links: true

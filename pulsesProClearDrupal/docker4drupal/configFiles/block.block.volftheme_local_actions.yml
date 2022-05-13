@@ -1,0 +1,20 @@
+uuid: 9ed76da9-a854-41d1-8c5d-77643a3e7fcf
+langcode: en
+status: true
+dependencies:
+  theme:
+    - volftheme
+_core:
+  default_config_hash: ajo71jLTH3rV0ihPpl2mVKfLdEtQF80GFqwU-m5XzYE
+id: volftheme_local_actions
+theme: volftheme
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

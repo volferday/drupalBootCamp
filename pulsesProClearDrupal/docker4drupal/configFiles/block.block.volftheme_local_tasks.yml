@@ -1,0 +1,22 @@
+uuid: 5c7f629b-2a92-4cdb-a3bd-b4bb66a79978
+langcode: en
+status: true
+dependencies:
+  theme:
+    - volftheme
+_core:
+  default_config_hash: HDXq28arGnly6-ixeAqH_7lkhJqDwNzA6a1FTcVCzLo
+id: volftheme_local_tasks
+theme: volftheme
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

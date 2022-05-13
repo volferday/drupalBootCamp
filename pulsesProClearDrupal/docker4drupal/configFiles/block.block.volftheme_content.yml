@@ -1,0 +1,26 @@
+uuid: 0ad68c93-0d0c-47af-9d6e-77b125796519
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - volftheme
+_core:
+  default_config_hash: k6FrC-UCiFJ_WBhb_DMoOzh-GCRwR0wTKuipPebL6S8
+id: volftheme_content
+theme: volftheme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

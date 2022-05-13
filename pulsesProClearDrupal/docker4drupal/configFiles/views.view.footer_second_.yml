@@ -442,8 +442,8 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h2 style="color:#febe2b; font-size:24px"><b>About Us</b></h2>'
-            format: full_html
+            value: '<p><b>About Us</b></p>'
+            format: basic_html
           tokenize: false
       footer: {  }
       display_extenders: {  }

@@ -1,0 +1,25 @@
+uuid: cbde77cf-e3b9-4453-be72-d82fa92e2b2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - volftheme
+_core:
+  default_config_hash: 8oQa6Q8ZnPRK_EtRkjENDIKHMLhuQsrJJ6UF5ijiSco
+id: volftheme_branding
+theme: volftheme
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
