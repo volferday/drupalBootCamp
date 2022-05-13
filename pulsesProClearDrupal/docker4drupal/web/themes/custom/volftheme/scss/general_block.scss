@@ -4,7 +4,10 @@ $titleColor: black;
 $titleHoverColor: #4c4084;
 $categoryColor: white;
 $shortDesc: #555555;
-$circleImgSize: toRem(50);
+$circleImgSize: toRem(70);
+$circleImgSizeSmallPhone: toRem(120);
+$circleImgSizeTablet: toRem(40);
+$circleImgSizeDesktop: toRem(60);
 
 .block-views-blockwelcome-block-block-1 {
   .view-welcome-block {
@@ -27,10 +30,11 @@ $circleImgSize: toRem(50);
           }
 
           .field--name-field-media- {
-            width: 100%;
-            //display: flex;
-            //justify-content: center;
+            margin: 0;
+            padding: 0;
+
             img {
+              max-height: 300px;
               width: 100%;
               position: center;
             }
@@ -44,9 +48,6 @@ $circleImgSize: toRem(50);
             text-decoration: none;
             color: $titleColor;
             font-weight: 700;
-            //@media(max-width: 1200px) {
-            //  font-size: toRem(17);
-            //}
 
             &:hover {
               color: $titleHoverColor;
@@ -63,9 +64,15 @@ $circleImgSize: toRem(50);
           }
 
           .field--name-field-short-description {
-            margin-top: 20px;
+            margin-top: toRem(20);
             color: $shortDesc;
-            font-size: 12px;
+            font-size: toRem(15);
+            @media (min-width: 768px) {
+              font-size: toRem(12);
+            }
+            @media (min-width: 1200px) {
+              font-size: toRem(15);
+            }
           }
 
           .field--type-entity-reference {
@@ -89,24 +96,57 @@ $circleImgSize: toRem(50);
             margin-left: toRem(5);
           }
 
-          block-views-blocknews-list-at-general-block-block-1 {
+          .block-views-blocknews-list-at-general-block-block-1 {
             article {
               position: relative;
-              margin-bottom: toRem(20);
+              margin-bottom: toRem(50);
+
+              .field--name-title {
+                font-size: toRem(17);
+                @media(min-width: 768px) and (max-width: 1018px) {
+                  font-size: toRem(12);
+                }
+                @media (min-width: 1019px) and (max-width: 1140px) {
+                  font-size: toRem(14);
+                }
+                @media (min-width: 1141px) {
+                  font-size: toRem(17);
+                }
+              }
+
+              .field--name-field-author, .field--name-field-dateofpublish {
+                float: left;
+
+                .field__item, time {
+                  font-size: toRem(13);
+                }
+
+              }
+
+              .field--name-field-author {
+                @media (min-width: 768px) and (max-width: 1140px) {
+                  display: none;
+                }
+              }
             }
 
-            .field--name-field-category-:first-child {
+            .field--name-field-category-:nth-child(1) {
+              //TODO:???
+              //&:not(:first-child) {
+              //  display: none;
+              //}
+
               position: absolute;
+              top: toRem(80);
+              @media (min-width: 768px) {
+                top: 2em;
+              }
               @media (min-width: 992px) {
-                top: 60%;
+                top: 4em;
               }
               @media (min-width: 1200px) {
-                top: 85%;
+                top: 1em;
               }
-            }
-
-            .field--name-field-author {
-              display: none;
             }
 
             .field--name-title {
@@ -121,53 +161,87 @@ $circleImgSize: toRem(50);
 
               img {
                 width: 100%;
-                height: toRem(150);
+                max-height: toRem(200);
                 position: absolute;
                 top: 0;
-                z-index: -5;
+                z-index: -1;
               }
             }
 
             article > h2 {
               padding-top: toRem(150);
-            }
-          }
-
-          article > h2 {
-            padding-top: toRem(5);
-          }
-
-          .view-content {
-            margin-top: toRem(-20);
-          }
-
-          .block-field-blocknodearticle-with-newsfield-media- {
-            .field--name-field-media- {
-              position: absolute;
-              //z-index: 10;
-              //top: toRem(500);
-
-              img {
-                border-radius: toRem(100);
-                position: center;
-                width: $circleImgSize;
-                height: $circleImgSize;
+              @media (min-width: 340px) {
+                padding-top: toRem(200);
+              }
+              @media(min-width: 768px) {
+                padding-top: toRem(120);
+              }
+              @media(min-width: 992px) {
+                padding-top: toRem(155);
+              }
+              @media(min-width: 1200px) {
+                padding-top: toRem(180);
               }
             }
           }
 
-          .node--view-mode-latest-news {
-            width: 80%;
+          .block-views-blockbusinessfrontpage-block-1, .block-views-blockeditorpicks-block-1 {
+            h2 {
+              display: inline-block;
+              width: 80%;
+            }
 
             .field--name-title {
               font-size: toRem(15);
-              @media (max-width: 992px) {
+              @media (min-width: 768px) and (max-width: 1018px) {
                 font-size: toRem(12);
+              }
+              @media (min-width: 1019px) and (max-width: 1140px) {
+                font-size: toRem(14);
+              }
+              @media (min-width: 1141px) {
+                font-size: toRem(15);
               }
             }
 
-            .datetime {
-              display: none;
+            .block-field-blocknodearticle-with-newsfield-media- {
+              .field--name-field-media- {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: -60px;
+
+                img {
+                  border-radius: 100%;
+                  position: center;
+                  width: $circleImgSize;
+                  height: $circleImgSize;
+                  @media (min-width: 576px) {
+                    width: $circleImgSizeSmallPhone;
+                    height: $circleImgSizeSmallPhone;
+                  }
+                  @media (min-width: 768px) {
+                    width: $circleImgSizeTablet;
+                    height: $circleImgSizeTablet;
+                  }
+                  @media (min-width: 1140px) {
+                    width: $circleImgSizeDesktop;
+                    height: $circleImgSizeDesktop;
+                  }
+                }
+              }
+            }
+
+            .node--view-mode-latest-news {
+              .field--name-title {
+                font-size: toRem(15);
+                @media (max-width: 992px) {
+                  font-size: toRem(12);
+                }
+              }
+
+              .datetime {
+                display: none;
+              }
             }
           }
         }
