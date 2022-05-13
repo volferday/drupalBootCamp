@@ -135,22 +135,9 @@ $circleImgSizeDesktop: toRem(60);
             }
 
             .field--name-field-category-:nth-child(1) {
-              position: absolute;
-              top:0;
-              //TODO:???
+              //TODO: display non for all not first child element + position it
               //&:not(:first-child) {
               //  display: none;
-              //}
-              //position: absolute;
-              //top: toRem(80);
-              //@media (min-width: 768px) {
-              //  top: 2em;
-              //}
-              //@media (min-width: 992px) {
-              //  top: 4em;
-              //}
-              //@media (min-width: 1200px) {
-              //  top: 1em;
               //}
             }
 
@@ -173,7 +160,7 @@ $circleImgSizeDesktop: toRem(60);
             }
 
             article > h2 {
-              padding:0;
+              padding: 0;
               order: 1;
             }
           }
