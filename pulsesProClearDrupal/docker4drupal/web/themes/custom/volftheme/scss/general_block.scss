@@ -98,6 +98,8 @@ $circleImgSizeDesktop: toRem(60);
 
           .block-views-blocknews-list-at-general-block-block-1 {
             article {
+              display: flex;
+              flex-flow: column;
               position: relative;
               margin-bottom: toRem(50);
 
@@ -116,6 +118,7 @@ $circleImgSizeDesktop: toRem(60);
 
               .field--name-field-author, .field--name-field-dateofpublish {
                 float: left;
+                order: 2;
 
                 .field__item, time {
                   font-size: toRem(13);
@@ -124,6 +127,7 @@ $circleImgSizeDesktop: toRem(60);
               }
 
               .field--name-field-author {
+                order: 2;
                 @media (min-width: 768px) and (max-width: 1140px) {
                   display: none;
                 }
@@ -131,22 +135,23 @@ $circleImgSizeDesktop: toRem(60);
             }
 
             .field--name-field-category-:nth-child(1) {
+              position: absolute;
+              top:0;
               //TODO:???
               //&:not(:first-child) {
               //  display: none;
               //}
-
-              position: absolute;
-              top: toRem(80);
-              @media (min-width: 768px) {
-                top: 2em;
-              }
-              @media (min-width: 992px) {
-                top: 4em;
-              }
-              @media (min-width: 1200px) {
-                top: 1em;
-              }
+              //position: absolute;
+              //top: toRem(80);
+              //@media (min-width: 768px) {
+              //  top: 2em;
+              //}
+              //@media (min-width: 992px) {
+              //  top: 4em;
+              //}
+              //@media (min-width: 1200px) {
+              //  top: 1em;
+              //}
             }
 
             .field--name-title {
@@ -158,30 +163,18 @@ $circleImgSizeDesktop: toRem(60);
 
             .field--name-field-media- {
               width: 100%;
+              order: -1;
 
               img {
                 width: 100%;
                 max-height: toRem(200);
-                position: absolute;
-                top: 0;
                 z-index: -1;
               }
             }
 
             article > h2 {
-              padding-top: toRem(150);
-              @media (min-width: 340px) {
-                padding-top: toRem(200);
-              }
-              @media(min-width: 768px) {
-                padding-top: toRem(120);
-              }
-              @media(min-width: 992px) {
-                padding-top: toRem(155);
-              }
-              @media(min-width: 1200px) {
-                padding-top: toRem(180);
-              }
+              padding:0;
+              order: 1;
             }
           }
 
