@@ -1,0 +1,168 @@
+@import "./logic.scss";
+
+$mainColor: black;
+$hoverColor: #4c4084;
+$taxonomyColor: white;
+
+.block-views-blockpolitics-block-block-1 {
+  .node--type-article-with-news, .view-header {
+    padding: toRem(10);
+  }
+
+  .view-content {
+    .views-row {
+      .node--view-mode-politics-block {
+        h2 {
+          //TODO: this stuff
+          //&:nth-child(1) {
+          //  display: none;
+          //}
+        }
+
+        .block-views-blockmagazine-sidebar-block-1,
+        .block-views-blocksport-sidebar-block-1,
+        .block-views-blockculture-sidebar-block-1,
+        .block-views-blockpolitics-block-1 {
+          .view-header {
+            p {
+              color: $hoverColor;
+              font-size: toRem(24);
+              @media (min-width: 768px) and (max-width: 1018px) {
+                font-size: toRem(18);
+              }
+              @media (min-width: 1019px) and (max-width: 1140px) {
+                font-size: toRem(19);
+              }
+              @media (min-width: 1141px) {
+                font-size: toRem(24);
+              }
+            }
+          }
+        }
+
+        .contextual-region {
+          .view-content {
+            article {
+              a {
+                text-decoration: none;
+                color: $mainColor;
+                font-weight: 700;
+                font-size: toRem(15);
+                @media (min-width: 768px) and (max-width: 1018px) {
+                  font-size: toRem(12);
+                }
+                @media (min-width: 1019px) and (max-width: 1140px) {
+                  font-size: toRem(14);
+                }
+                @media (min-width: 1141px) {
+                  font-size: toRem(15);
+                }
+
+                &:hover {
+                  color: $hoverColor;
+                }
+              }
+
+              .field--name-field-dateofpublish {
+                .field__label {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+
+        .block-views-blockpolitics-block-1 {
+          border: none;
+
+          .field--name-field-category- {
+            position: absolute;
+            top: 85%;
+            @media (min-width: 768px) and (max-width: 1018px) {
+              top: 74%;
+            }
+            @media (min-width: 1019px) and (max-width: 1140px) {
+              top: 80%;
+            }
+            @media (min-width: 1141px) {
+              top: 83%;
+            }
+
+            .field__item {
+              a {
+                font-size: toRem(10) !important;
+                font-weight: 400;
+                padding: 3px 4px 2px;
+                background-color: $hoverColor;
+                color: $taxonomyColor !important;
+              }
+            }
+          }
+
+          .node--view-mode-news-at-frontpage {
+            h2 {
+              @media (min-width: 640px) {
+                margin-left: 40%;
+                width: 60%;
+              }
+            }
+
+            .field--name-field-media- {
+              @media (min-width: 640px) {
+                width: 110%;
+                margin-top: -4rem;
+              }
+            }
+
+            .layout--twocol-section {
+              .layout__region--second {
+                @media (min-width: 640px) {
+                  position: absolute;
+                  left: 40%;
+                  width: 80%;
+                }
+              }
+            }
+          }
+
+          .contextual-region {
+            border: none;
+          }
+
+          .view-content {
+            .field--name-field-title-of-news {
+              display: none;
+            }
+
+            .field--name-field-author {
+              float: left;
+              padding-left: toRem(3);
+              @media(max-width: 1140px) {
+                display: none;
+              }
+            }
+
+            .field--name-field-short-description {
+              width: 80%;
+              @media(max-width: 1140px){
+                display: none;
+              }
+            }
+          }
+        }
+
+        .block-views-blocksport-sidebar-block-1, .block-views-blockculture-sidebar-block-1, .block-views-blockmagazine-sidebar-block-1 {
+          border: 0.1px solid rgba(196, 196, 196, 0.4);
+
+          .view-header {
+            margin-bottom: toRem(-40);
+          }
+
+          .field--name-field-title-of-news, .datetime {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
