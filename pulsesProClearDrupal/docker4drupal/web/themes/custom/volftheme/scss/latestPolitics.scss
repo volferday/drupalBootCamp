@@ -3,6 +3,10 @@
 $mainColor: black;
 $hoverColor: #4c4084;
 $taxonomyColor: white;
+$imgBigScreen: toRem(80);
+$imgTabletScreen: toRem(50);
+$imgDeskScreen: toRem(65);
+$imgPhoneScreen: toRem(180);
 
 .block-views-blockpolitics-block-block-1 {
   .node--type-article-with-news, .view-header {
@@ -144,7 +148,7 @@ $taxonomyColor: white;
 
             .field--name-field-short-description {
               width: 80%;
-              @media(max-width: 1140px){
+              @media(max-width: 1140px) {
                 display: none;
               }
             }
@@ -161,6 +165,44 @@ $taxonomyColor: white;
           .field--name-field-title-of-news, .datetime {
             display: none;
           }
+        }
+
+        .block-views-blockculture-sidebar-block-1, .block-views-blocksport-sidebar-block-1 {
+          .node--type-article-with-news {
+            h2 {
+              width: 60%;
+            }
+
+            .block-field-blocknodearticle-with-newsfield-media- {
+              .field--name-field-media- {
+                img {
+                  @media (min-width: 768px) {
+                    position: absolute;
+                    top: 15%;
+                    right: 5%;
+                  }
+                  width: $imgPhoneScreen;
+                  height: $imgPhoneScreen;
+                  @media (min-width: 768px) {
+                    width: $imgTabletScreen;
+                    height: $imgTabletScreen;
+                  }
+                  @media (min-width: 1021px) {
+                    width: $imgDeskScreen;
+                    height: $imgDeskScreen;
+                  }
+                  @media (min-width: 1041px) {
+                    width: $imgBigScreen;
+                    height: $imgBigScreen;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .block-views-blockculture-sidebar-block-1 {
+          margin-top: toRem(20);
         }
       }
     }
