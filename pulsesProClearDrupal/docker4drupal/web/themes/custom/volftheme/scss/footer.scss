@@ -9,12 +9,8 @@ $hoverLinkColor: #febe2b;
 .site-footer {
   background-image: linear-gradient(rgba(13, 14, 15, 0.9), rgba(19, 21, 21, 0.9)), url("https://demo.tagdiv.com/newspaper_pulses_pro/wp-content/uploads/2019/12/47-1.jpg") !important;
   content: '';
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: 0;
-  background-size: cover;
   background-position: center top;
+  min-width:100%;
 
   a {
     color: $footerTextColor;
