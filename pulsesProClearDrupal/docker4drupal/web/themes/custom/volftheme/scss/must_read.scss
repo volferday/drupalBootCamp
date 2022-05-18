@@ -1,0 +1,134 @@
+@import "./logic.scss";
+
+
+$secondColor: #4c4084;
+$headerTextColor: white;
+
+.block-views-blockmust-read-block-block-1 {
+  .layout-builder__layout {
+    .col-lg-3 {
+      width: 40%;
+    }
+
+    .col-lg-9 {
+      width: 60%;
+    }
+  }
+
+  .view-header {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: $secondColor;
+    @media(min-width: 1200px) {
+      width: 90vw;
+      position: relative;
+      left: 50%;
+      margin-left: -45vw;
+    }
+
+    p, span {
+      margin-left: 10%;
+      color: $headerTextColor;
+    }
+
+    p {
+      padding-top: toRem(20);
+      font-size: toRem(40);
+      @media (min-width: 768px) and (max-width: 1018px) {
+        font-size: toRem(34);
+      }
+      @media (min-width: 1019px) and (max-width: 1140px) {
+        font-size: toRem(40);
+      }
+      @media (min-width: 1141px) {
+        font-size: toRem(64);
+      }
+    }
+
+    span {
+      display: block;
+      padding-bottom: toRem(100);
+      font-size: toRem(15);
+      line-height: toRem(24);
+      @media (min-width: 768px) and (max-width: 1018px) {
+        font-size: toRem(13);
+      }
+      @media (min-width: 1019px) and (max-width: 1140px) {
+        line-height: toRem(28);
+        font-size: toRem(14);
+      }
+      @media (min-width: 1141px) {
+        font-size: toRem(16);
+      }
+    }
+  }
+
+  .view-content {
+    .views-row {
+      article {
+        .field__label, .field--name-field-title-of-news, .field--name-field-short-description {
+          display: none;
+        }
+
+        .node__content {
+          flex-flow: row wrap;
+
+          .field--name-field-category- {
+            a {
+              background-color: $secondColor;
+              color: $headerTextColor;
+              padding: toRem(3) toRem(4) toRem(2);
+              text-decoration: none;
+              font-size: toRem(10);
+            }
+          }
+
+          .image-style-genera {
+            @media (min-width: 768px) {
+              height: toRem(410);
+              object-fit: cover;
+              position: absolute;
+              top: -90%;
+            }
+            @media (min-width: 992px) {
+              top: -100%;
+            }
+
+          }
+
+          .datetime, .field--name-field-author {
+            font-size: toRem(13);
+            @media (min-width: 768px) and (max-width: 1018px) {
+              font-size: toRem(12);
+            }
+            @media (min-width: 1019px) {
+              font-size: toRem(13);
+            }
+          }
+
+          .field--name-field-author {
+            z-index: 1;
+            float: left;
+            @media (max-width: 1018px) {
+              display: none;
+            }
+          }
+
+          .datetime {
+            z-index: 1;
+          }
+        }
+
+        & > h2 {
+          &:nth-child(1) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
