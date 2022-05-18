@@ -44,7 +44,7 @@ $mainColor: black;
 .navbar-nav {
   margin-top: 5px;
   text-align: center;
-  flex-direction: row;
+  flex-direction: row !important;
   font-size: 1.2vw;
   display: flex;
   justify-content: center;
