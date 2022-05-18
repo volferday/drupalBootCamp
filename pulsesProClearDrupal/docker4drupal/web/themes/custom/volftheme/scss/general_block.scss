@@ -1,0 +1,305 @@
+@import "./logic";
+
+$titleColor: black;
+$titleHoverColor: #4c4084;
+$categoryColor: white;
+$shortDesc: #555555;
+$circleImgSize: toRem(70);
+$circleImgSizeSmallPhone: toRem(120);
+$circleImgSizeTablet: toRem(40);
+$circleImgSizeDesktop: toRem(60);
+
+.block-views-blockwelcome-block-block-1 {
+  .view-welcome-block {
+    .view-content {
+      .views-row {
+        article {
+          position: relative;
+          margin-bottom: toRem(40);
+
+          & > h2 {
+            line-height: 1.1;
+            @media (min-width: 1400px) {
+              line-height: 1.1;
+            }
+
+            &:first-child {
+              padding-top: toRem(30);
+              font-size: toRem(21);
+            }
+          }
+
+          .field--name-field-media- {
+            margin: 0;
+            padding: 0;
+
+            img {
+              max-height: 300px;
+              width: 100%;
+              position: center;
+            }
+          }
+
+          .node__meta, .field__label, .field--name-field-title-of-news {
+            display: none;
+          }
+
+          a, .field--name-title {
+            text-decoration: none;
+            color: $titleColor;
+            font-weight: 700;
+
+            &:hover {
+              color: $titleHoverColor;
+            }
+          }
+
+          .field--name-field-category- {
+            position: absolute;
+            top: 0;
+          }
+
+          .field--name-field-author, .datetime {
+            font-size: toRem(12);
+          }
+
+          .field--name-field-short-description {
+            margin-top: toRem(20);
+            color: $shortDesc;
+            font-size: toRem(15);
+            @media (min-width: 768px) {
+              font-size: toRem(12);
+            }
+            @media (min-width: 1200px) {
+              font-size: toRem(15);
+            }
+          }
+
+          .field--type-entity-reference {
+            .field__item > a {
+              padding: toRem(2) toRem(5);
+              background-color: $titleHoverColor;
+              color: $categoryColor;
+              font-size: toRem(10);
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+
+          .field--name-field-author, .datetime {
+            float: left;
+          }
+
+          .datetime {
+            margin-left: toRem(5);
+          }
+
+          .block-views-blocknews-list-at-general-block-block-1 {
+            article {
+              display: flex;
+              flex-flow: column;
+              position: relative;
+              margin-bottom: toRem(50);
+
+              .field--name-title {
+                font-size: toRem(17);
+                @media(min-width: 768px) and (max-width: 1018px) {
+                  font-size: toRem(12);
+                }
+                @media (min-width: 1019px) and (max-width: 1140px) {
+                  font-size: toRem(14);
+                }
+                @media (min-width: 1141px) {
+                  font-size: toRem(17);
+                }
+              }
+
+              .field--name-field-author, .field--name-field-dateofpublish {
+                float: left;
+                order: 2;
+
+                .field__item, time {
+                  font-size: toRem(13);
+                }
+
+              }
+
+              .field--name-field-author {
+                order: 2;
+                @media (min-width: 768px) and (max-width: 1140px) {
+                  display: none;
+                }
+              }
+            }
+
+            .field--name-field-category-:nth-child(1) {
+              //TODO: display non for all not first child element + position it
+              //&:not(:first-child) {
+              //  display: none;
+              //}
+            }
+
+            .field--name-title {
+              font-size: toRem(17);
+              @media(max-width: 992px) {
+                font-size: toRem(12);
+              }
+            }
+
+            .field--name-field-media- {
+              width: 100%;
+              order: -1;
+
+              img {
+                width: 100%;
+                max-height: toRem(200);
+                z-index: -1;
+              }
+            }
+
+            article > h2 {
+              padding: 0;
+              order: 1;
+            }
+          }
+
+          .block-views-blockbusinessfrontpage-block-1, .block-views-blockeditorpicks-block-1 {
+            h2 {
+              display: inline-block;
+              width: 80%;
+            }
+
+            .field--name-title {
+              font-size: toRem(15);
+              @media (min-width: 768px) and (max-width: 1018px) {
+                font-size: toRem(12);
+              }
+              @media (min-width: 1019px) and (max-width: 1140px) {
+                font-size: toRem(14);
+              }
+              @media (min-width: 1141px) {
+                font-size: toRem(15);
+              }
+            }
+
+            .block-field-blocknodearticle-with-newsfield-media- {
+              .field--name-field-media- {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: -60px;
+
+                img {
+                  border-radius: 100%;
+                  position: center;
+                  width: $circleImgSize;
+                  height: $circleImgSize;
+                  @media (min-width: 576px) {
+                    width: $circleImgSizeSmallPhone;
+                    height: $circleImgSizeSmallPhone;
+                  }
+                  @media (min-width: 768px) {
+                    width: $circleImgSizeTablet;
+                    height: $circleImgSizeTablet;
+                  }
+                  @media (min-width: 1140px) {
+                    width: $circleImgSizeDesktop;
+                    height: $circleImgSizeDesktop;
+                  }
+                }
+              }
+            }
+
+            .node--view-mode-latest-news {
+              .field--name-title {
+                font-size: toRem(15);
+                @media (max-width: 992px) {
+                  font-size: toRem(12);
+                }
+              }
+
+              .datetime {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .block-views-blocknew-podcast-block-1 {
+          article > h2 {
+            padding: 0;
+            font-size: toRem(15);
+            @media (min-width: 768px) and (max-width: 1018px) {
+              font-size: toRem(12);
+            }
+            @media (min-width: 1019px) and (max-width: 1140px) {
+              font-size: toRem(14);
+            }
+            @media (min-width: 1141px) {
+              font-size: toRem(15);
+            }
+          }
+
+          .field--name-field-media-audio-file {
+            audio::-webkit-media-controls-play-button,
+            audio::-webkit-media-controls-volume-slider,
+            audio::-webkit-media-controls-volume-slider-container {
+              background-color: $titleHoverColor;
+              color: $titleHoverColor;
+            }
+          }
+
+          p {
+            font-size: toRem(24) !important;
+            @media (min-width: 768px) and (max-width: 1018px) {
+              font-size: toRem(18) !important;
+            }
+            @media (min-width: 1019px) and (max-width: 1140px) {
+              font-size: toRem(19) !important;
+            }
+            @media(min-width: 1141px) {
+              font-size: toRem(24) !important;
+            }
+          }
+        }
+
+        .block-views-blocksubscribe-block-1 {
+          .view-header {
+            p:first-child {
+              font-size: toRem(24) !important;
+              @media (min-width: 768px) and (max-width: 1018px) {
+                font-size: toRem(18) !important;
+              }
+              @media (min-width: 1019px) and (max-width: 1140px) {
+                font-size: toRem(19) !important;
+              }
+              @media(min-width: 1141px) {
+                font-size: toRem(24) !important;
+              }
+            }
+          }
+        }
+
+        .block-block-contentf5461a54-20b2-4ddf-a519-b21571980e47 {
+          .field--name-body {
+            p {
+              strong {
+                font-size: toRem(24);
+                @media (min-width: 768px) and (max-width: 1018px) {
+                  font-size: toRem(18);
+                }
+                @media (min-width: 1019px) and (max-width: 1140px) {
+                  font-size: toRem(19);
+                }
+                @media(min-width: 1141px) {
+                  font-size: toRem(24);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

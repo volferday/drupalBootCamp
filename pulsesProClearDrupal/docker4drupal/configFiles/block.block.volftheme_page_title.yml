@@ -1,0 +1,20 @@
+uuid: bd791c58-61d0-4155-b430-644e071f41fe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - volftheme
+_core:
+  default_config_hash: vYzjTkXbZGdU1AM9mInYuvbEqB2gU269us76ETytFcU
+id: volftheme_page_title
+theme: volftheme
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

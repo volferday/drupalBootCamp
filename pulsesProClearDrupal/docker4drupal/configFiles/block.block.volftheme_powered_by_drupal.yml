@@ -1,0 +1,22 @@
+uuid: c14057e7-baa9-47d7-bf65-92d7d31df78c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - volftheme
+_core:
+  default_config_hash: 9-xpL96Z0NTyyb68S9hL-BE03mGw4WrJmBFr7TzVSMw
+id: volftheme_powered_by_drupal
+theme: volftheme
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

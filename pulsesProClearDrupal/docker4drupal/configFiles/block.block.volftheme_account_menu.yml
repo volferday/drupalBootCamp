@@ -1,0 +1,27 @@
+uuid: f0857b61-8d18-47ed-8bfb-2b1b02210dc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - volftheme
+_core:
+  default_config_hash: LazWqqSoKOyO90fOnRGEPIiFbHTut4LI9s5DVM7S0TA
+id: volftheme_account_menu
+theme: volftheme
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

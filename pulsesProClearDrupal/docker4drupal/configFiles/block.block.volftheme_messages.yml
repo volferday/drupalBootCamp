@@ -1,0 +1,22 @@
+uuid: 057f29fe-92d1-486b-92ba-16f607f4b0cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - volftheme
+_core:
+  default_config_hash: LkixrnK7doaO1gAXn5pV7HF6FE3oChqrlCAMheucotQ
+id: volftheme_messages
+theme: volftheme
+region: content
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

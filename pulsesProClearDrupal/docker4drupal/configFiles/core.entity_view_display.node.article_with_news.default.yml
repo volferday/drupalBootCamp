@@ -27,7 +27,6 @@ dependencies:
     - datetime
     - entity_reference_revisions
     - layout_builder
-    - media
     - layout_discovery
     - text
     - user

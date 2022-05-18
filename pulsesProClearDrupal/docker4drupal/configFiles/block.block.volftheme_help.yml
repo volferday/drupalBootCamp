@@ -1,0 +1,22 @@
+uuid: 98f04a34-b684-448c-9f67-3ab6b1729bb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - volftheme
+_core:
+  default_config_hash: DlM90IM6XS5QYNJpNSXLHTVvRdWtBmQtbZ2wsLr3XIs
+id: volftheme_help
+theme: volftheme
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

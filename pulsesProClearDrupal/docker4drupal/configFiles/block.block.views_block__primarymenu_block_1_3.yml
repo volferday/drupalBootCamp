@@ -1,0 +1,24 @@
+uuid: b2249307-d7ef-447c-8906-f0a004440530
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.primarymenu
+  module:
+    - views
+  theme:
+    - volftheme
+id: views_block__primarymenu_block_1_3
+theme: volftheme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'views_block:primarymenu-block_1'
+settings:
+  id: 'views_block:primarymenu-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

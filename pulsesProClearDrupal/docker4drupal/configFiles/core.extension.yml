@@ -5,6 +5,8 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  bootstrap_layout_builder: 0
+  bootstrap_styles: 0
   breakpoint: 0
   ckeditor: 0
   color: 0
@@ -29,6 +31,9 @@ module:
   layout_discovery: 0
   link: 0
   media: 0
+  media_library: 0
+  media_library_form_element: 0
+  media_library_theme_reset: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -39,6 +44,7 @@ module:
   path: 0
   path_alias: 0
   rdf: 0
+  responsive_image: 0
   search: 0
   shortcut: 0
   system: 0
@@ -55,4 +61,8 @@ module:
 theme:
   bartik: 0
   seven: 0
+  stable: 0
+  classy: 0
+  bootstrap5: 0
+  volftheme: 0
 profile: standard

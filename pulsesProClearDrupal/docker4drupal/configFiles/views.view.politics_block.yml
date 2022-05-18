@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.politics_block
-    - node.type.article_with_news
+    - core.entity_view_mode.node.full
+    - node.type.politics_block
   module:
     - node
     - user
@@ -91,7 +91,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 5
       exposed_form:
         type: basic
         options:
@@ -154,7 +154,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            article_with_news: article_with_news
+            politics_block: politics_block
           group: 1
           exposed: false
           expose:
@@ -190,7 +190,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: politics_block
+          view_mode: full
       query:
         type: views_query
         options:
