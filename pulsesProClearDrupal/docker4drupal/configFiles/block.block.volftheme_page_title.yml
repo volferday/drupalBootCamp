@@ -1,6 +1,6 @@
 uuid: bd791c58-61d0-4155-b430-644e071f41fe
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - volftheme
@@ -9,7 +9,7 @@ _core:
 id: volftheme_page_title
 theme: volftheme
 region: content
-weight: -9
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

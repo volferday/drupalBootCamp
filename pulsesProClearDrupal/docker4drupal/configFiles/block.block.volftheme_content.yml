@@ -1,6 +1,6 @@
 uuid: 0ad68c93-0d0c-47af-9d6e-77b125796519
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: k6FrC-UCiFJ_WBhb_DMoOzh-GCRwR0wTKuipPebL6S8
 id: volftheme_content
 theme: volftheme
-region: content
-weight: -4
+region: breadcrumb
+weight: -10
 provider: null
 plugin: system_main_block
 settings:

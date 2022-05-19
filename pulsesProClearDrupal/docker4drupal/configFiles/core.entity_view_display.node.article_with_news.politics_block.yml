@@ -1,10 +1,10 @@
-uuid: b0dca587-3ef5-4880-9364-cd1490db81ec
+uuid: b585bbfb-5d75-46f3-9ff0-83e384e091ce
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
-    - core.entity_view_mode.node.must_read
+    - core.entity_view_mode.node.politics_block
     - field.field.node.article_with_news.body
     - field.field.node.article_with_news.field_author
     - field.field.node.article_with_news.field_author_information
@@ -20,13 +20,15 @@ dependencies:
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
     - node.type.article_with_news
-    - views.view.must_read_general
-    - views.view.news_list_at_must_read_block
+    - views.view.culture_sidebar
+    - views.view.magazine_sidebar
+    - views.view.politics
+    - views.view.sport_sidebar
   module:
     - comment
     - datetime
+    - entity_reference_revisions
     - layout_builder
-    - media
     - text
     - user
     - views
@@ -36,11 +38,11 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: 'bootstrap_layout_builder:blb_col_2'
+        layout_id: 'bootstrap_layout_builder:blb_col_3'
         layout_settings:
-          label: must_read_label
+          label: ''
           context_mapping: {  }
-          container_wrapper_classes: test_class
+          container_wrapper_classes: ''
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -127,18 +129,20 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container-fluid
+          container: w-100
           section_classes: ''
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
             blb_region_col_2: ''
+            blb_region_col_3: ''
           regions_attributes:
             blb_region_col_1: null
             blb_region_col_2: null
+            blb_region_col_3: null
           breakpoints:
-            desktop: blb_col_3_9
-            tablet: blb_col_3_9
+            desktop: blb_col_3_6_3
+            tablet: blb_col_3_6_3
             mobile: blb_col_12
           layout_regions_classes:
             blb_region_col_1:
@@ -146,29 +150,20 @@ third_party_settings:
               - col-md-3
               - col-12
             blb_region_col_2:
-              - col-lg-9
-              - col-md-9
+              - col-lg-6
+              - col-md-6
+              - col-12
+            blb_region_col_3:
+              - col-lg-3
+              - col-md-3
               - col-12
           remove_gutters: '0'
         components:
-          b888d081-faa0-4fd1-815e-7f917dc91438:
-            uuid: b888d081-faa0-4fd1-815e-7f917dc91438
-            region: blb_region_col_1
-            configuration:
-              id: 'views_block:must_read_general-block_1'
-              label: ''
-              label_display: '0'
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 0
-            additional: {  }
-          70a8b461-5ef6-4530-9729-7042339b52c7:
-            uuid: 70a8b461-5ef6-4530-9729-7042339b52c7
+          613c8c8e-19f3-4b65-a798-8c525f95a268:
+            uuid: 613c8c8e-19f3-4b65-a798-8c525f95a268
             region: blb_region_col_2
             configuration:
-              id: 'views_block:news_list_at_must_read_block-block_1'
+              id: 'views_block:politics-block_1'
               label: ''
               label_display: '0'
               provider: views
@@ -177,25 +172,66 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
+          fbdc0978-7a1d-4b72-af9d-11a01b7bfa91:
+            uuid: fbdc0978-7a1d-4b72-af9d-11a01b7bfa91
+            region: blb_region_col_1
+            configuration:
+              id: 'views_block:magazine_sidebar-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          157fb529-cda4-4334-918d-14279bdf475d:
+            uuid: 157fb529-cda4-4334-918d-14279bdf475d
+            region: blb_region_col_3
+            configuration:
+              id: 'views_block:sport_sidebar-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          f7072ef4-809e-472a-92b9-c433f2a5d738:
+            uuid: f7072ef4-809e-472a-92b9-c433f2a5d738
+            region: blb_region_col_3
+            configuration:
+              id: 'views_block:culture_sidebar-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
-id: node.article_with_news.must_read
+id: node.article_with_news.politics_block
 targetEntityType: node
 bundle: article_with_news
-mode: must_read
+mode: politics_block
 content:
-  body:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
   field_author:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_author_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_category_:
     type: entity_reference_label
@@ -212,7 +248,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_dateofpublish:
     type: datetime_default
@@ -223,49 +259,22 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_editorpicks:
-    type: boolean
+  field_main_content:
+    type: entity_reference_revisions_entity_view
     label: above
     settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_general_news:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 7
-    region: content
-  field_media_:
-    type: media_thumbnail
-    label: inline
-    settings:
-      image_link: ''
-      image_style: ''
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 3
     region: content
-  field_must_read:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 8
-    region: content
 hidden:
-  field_author_information: true
+  body: true
+  field_editorpicks: true
+  field_general_news: true
   field_is_podcast: true
-  field_main_content: true
+  field_media_: true
+  field_must_read: true
   field_short_description: true
   field_title_of_news: true
   links: true
