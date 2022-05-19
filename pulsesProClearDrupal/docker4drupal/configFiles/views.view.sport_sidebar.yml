@@ -298,7 +298,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p style="color:#4c4084;font-size:24px;"><b>Sport</b></p>'
+            value: '<p><b>Sport</b></p>'
             format: full_html
           tokenize: false
       footer: {  }

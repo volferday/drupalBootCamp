@@ -1,0 +1,10 @@
+uuid: e387b925-3d6d-4063-8ec3-a747f8be069c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.politics_block
+label: 'Politics block'
+targetEntityType: node
+cache: true
