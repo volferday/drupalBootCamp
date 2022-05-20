@@ -9,7 +9,7 @@ _core:
 id: volftheme_page_title
 theme: volftheme
 region: content
-weight: -9
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

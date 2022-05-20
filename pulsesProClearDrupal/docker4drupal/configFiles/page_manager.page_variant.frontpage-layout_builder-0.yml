@@ -1,0 +1,20 @@
+uuid: 05badf84-a866-4268-9e13-38767d07a92a
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.frontpage
+id: frontpage-layout_builder-0
+label: 'Layout Builder'
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 54116da7-1925-49c2-bb62-792934c45ad6
+  sections: {  }
+page: frontpage
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,6 +1,6 @@
 uuid: 9ed76da9-a854-41d1-8c5d-77643a3e7fcf
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - volftheme
@@ -9,7 +9,7 @@ _core:
 id: volftheme_local_actions
 theme: volftheme
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

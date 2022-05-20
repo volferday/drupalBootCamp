@@ -1,22 +1,22 @@
-uuid: d6efad79-0657-423b-8679-78aa48c4d25b
+uuid: 2471853d-ab70-47c9-a5ef-3410c49d6188
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.welcome_block
+    - views.view.must_read_block
   module:
     - system
     - views
   theme:
     - volftheme
-id: views_block__welcome_block_block_1_2
+id: views_block__must_read_block_block_1_2
 theme: volftheme
 region: content
-weight: -6
+weight: -5
 provider: null
-plugin: 'views_block:welcome_block-block_1'
+plugin: 'views_block:must_read_block-block_1'
 settings:
-  id: 'views_block:welcome_block-block_1'
+  id: 'views_block:must_read_block-block_1'
   label: ''
   label_display: '0'
   provider: views

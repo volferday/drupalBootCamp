@@ -1,6 +1,6 @@
 uuid: 057f29fe-92d1-486b-92ba-16f607f4b0cf
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: volftheme_messages
 theme: volftheme
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: system_messages_block
 settings:

@@ -1,0 +1,279 @@
+@import "./logic.scss";
+
+
+$secondColor: #4c4084;
+$headerTextColor: white;
+$titleColor: black;
+
+.block-views-blockmust-read-block-block-1 {
+  margin-bottom: toRem(250);
+
+  .layout-builder__layout {
+    .col-lg-3 {
+      @media (min-width: 768px) {
+        width: 40%;
+      }
+    }
+
+    .col-lg-9 {
+      @media (min-width: 768px) {
+        width: 60%;
+      }
+    }
+  }
+
+  .view-header {
+    width: 100vw;
+    z-index: -3;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: $secondColor;
+    @media(min-width: 1200px) {
+      width: 90vw;
+      position: relative;
+      left: 50%;
+      margin-left: -45vw;
+    }
+
+    p, span {
+      margin-left: 10%;
+      color: $headerTextColor;
+    }
+
+    p {
+      padding-top: toRem(20);
+      font-size: toRem(40);
+      @media (min-width: 768px) and (max-width: 1018px) {
+        font-size: toRem(34);
+      }
+      @media (min-width: 1019px) and (max-width: 1140px) {
+        font-size: toRem(40);
+      }
+      @media (min-width: 1141px) {
+        font-size: toRem(64);
+      }
+    }
+
+    span {
+      display: block;
+      padding-bottom: toRem(100);
+      font-size: toRem(15);
+      line-height: toRem(24);
+      @media (min-width: 768px) and (max-width: 1018px) {
+        font-size: toRem(13);
+      }
+      @media (min-width: 1019px) and (max-width: 1140px) {
+        line-height: toRem(28);
+        font-size: toRem(14);
+      }
+      @media (min-width: 1141px) {
+        font-size: toRem(16);
+      }
+    }
+  }
+
+  .node--view-mode-must-read{
+    h2{
+      display: none;
+    }
+    .test_class{
+      h2{
+        display:block;
+      }
+    }
+  }
+
+  .view-content {
+    .views-row {
+      article {
+        .field__label, .field--name-field-title-of-news, .field--name-field-short-description {
+          display: none;
+        }
+
+        .field--name-field-category- {
+          @media(max-width: 768px) {
+            position: absolute;
+          }
+        }
+
+        h2 {
+          a {
+            text-decoration: none;
+            color: $titleColor;
+            font-size: toRem(13);
+            @media (min-width: 768px) {
+              position: absolute;
+            }
+            @media (min-width: 768px) and (max-width: 1018px) {
+              font-size: toRem(12);
+            }
+            @media (min-width: 1019px) {
+              font-size: toRem(14);
+            }
+            @media (min-width: 1200px) {
+              font-size: toRem(17);
+            }
+          }
+        }
+
+        .node__content {
+          flex-flow: row wrap;
+
+          .field--name-field-category- {
+            a {
+              background-color: $secondColor;
+              color: $headerTextColor;
+              padding: toRem(3) toRem(4) toRem(2);
+              text-decoration: none;
+              font-size: toRem(10);
+            }
+          }
+
+          .image-style-genera {
+            z-index: -1;
+            @media (min-width: 768px) {
+              height: toRem(300);
+              object-fit: cover;
+              position: absolute;
+              top: toRem(-70);
+            }
+            @media (min-width: 992px) {
+              height: toRem(410);
+            }
+          }
+
+          .image-style-for-articles-list {
+            width: 100%;
+            @media (min-width: 768px) {
+              position: absolute;
+              z-index: -1;
+              top: toRem(-96);
+            }
+            @media (min-width: 992px) {
+              top: toRem(0);
+            }
+          }
+
+          .datetime, .field--name-field-author {
+            display: inline-block;
+            font-size: toRem(13);
+            margin-top: toRem(450);
+            @media (max-width: 768px) {
+              display: none;
+            }
+            @media (min-width: 768px) and (max-width: 1018px) {
+              font-size: toRem(12);
+            }
+            @media (min-width: 1019px) {
+              font-size: toRem(13);
+            }
+          }
+
+          .field--name-field-author {
+            z-index: 1;
+            float: left;
+            @media (max-width: 1018px) {
+              display: none;
+            }
+          }
+
+          .datetime {
+            z-index: 1;
+          }
+        }
+
+        .block-views-blocknews-list-at-must-read-block-block-1 {
+          .view-content {
+            .row-2 {
+              @media (min-width: 768px) {
+                margin-top: toRem(200);
+              }
+              @media (min-width: 1200px) {
+                margin-top: toRem(300);
+              }
+            }
+
+            .datetime, .field--name-field-author {
+              position: absolute;
+              @media (min-width: 768px) {
+                top: toRem(-350);
+                font-size: toRem(12);
+              }
+              @media (min-width: 992px) {
+                top: toRem(-240);
+                font-size: toRem(13);
+              }
+              @media (min-width: 1200px) {
+                top: toRem(-200);
+              }
+              @media (min-width: 1400px) {
+                top: toRem(-180);
+              }
+            }
+
+            .datetime {
+              @media (min-width: 1021px) {
+                left: 40%;
+              }
+            }
+          }
+        }
+
+        .node--view-mode-general-news {
+          .datetime, .field--name-field-author {
+            position: absolute;
+            @media (min-width: 768px) {
+              top: toRem(-120);
+            }
+            @media (min-width: 992px) {
+              top: toRem(0);
+            }
+          }
+
+          .datetime {
+            @media (min-width: 1021px) {
+              left: 50%;
+            }
+          }
+
+          h2 {
+            a {
+              @media (min-width: 768px) {
+                top: toRem(250);
+              }
+              @media (min-width: 992px) {
+                top: toRem(360);
+              }
+              @media (min-width: 1200px) {
+                top: toRem(370);
+              }
+              //TODO RESPONSIVE FOR  DATA AND AUTHOR
+            }
+          }
+        }
+
+        .node--view-mode-article-list {
+          h2 {
+            a {
+              @media (min-width: 768px) {
+                top: toRem(35);
+              }
+              @media (min-width: 992px) {
+                top: toRem(160);
+              }
+              @media (min-width: 1200px) {
+                top: toRem(200);
+              }
+              @media (min-width: 1400px) {
+                top: toRem(220);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
