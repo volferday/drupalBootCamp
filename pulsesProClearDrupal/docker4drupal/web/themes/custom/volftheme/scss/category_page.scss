@@ -6,17 +6,23 @@ $categoryBackground: #4c4084;
 $categoryColor: white;
 $paddingForTextPart: 37%;
 
+$mobilePhoto: toRem(154);
+$tabletPhoto: toRem(55);
+$desktopPhoto: toRem(75);
+$wideScreenPhoto: toRem(85);
+
 .view-id-article_view {
-  //TODO
-  //.view-header {
-  //  width: 100vw;
-  //  z-index: -3;
-  //  position: relative;
-  //  left: 50%;
-  //  right: 50%;
-  //  margin-left: -50vw;
-  //  margin-right: -50vw;
-  //}
+  .view-header {
+    width: 100vw;
+    z-index: -3;
+    position: relative;
+    left: 50%;
+    margin-left: -39vw;
+    @media (min-width: 1400px) {
+      margin-left: -39vw;
+    }
+  }
+
   .view-content {
     .views-row {
       article {
@@ -44,6 +50,8 @@ $paddingForTextPart: 37%;
         .node__content {
           .layout-builder__layout {
             .block-field-blocknodearticle-with-newsfield-category- {
+              position: absolute;
+
               .field--name-field-category- {
                 .field__item {
                   a {
@@ -70,6 +78,7 @@ $paddingForTextPart: 37%;
 
             .block-field-blocknodearticle-with-newsfield-short-description {
               padding-left: $paddingForTextPart;
+              margin-top: toRem(100);
               font-size: toRem(15);
               @media (max-width: 1021px) {
                 display: none;
@@ -78,20 +87,135 @@ $paddingForTextPart: 37%;
 
             .block-field-blocknodearticle-with-newsfield-author, .block-field-blocknodearticle-with-newsfield-dateofpublish {
               display: flex;
+              align-items: center;
+              margin-top: toRem(50);
+              @media(min-width: 1021px) {
+                margin-top: toRem(-100);
+              }
+              @media(min-width: 1200px) {
+                margin-top: toRem(-130);
+              }
             }
 
             .block-field-blocknodearticle-with-newsfield-author {
               float: left;
-              padding-left: $paddingForTextPart;
+              @media (min-width: 1021px) {
+                padding-left: $paddingForTextPart;
+              }
             }
 
-            .block-field-blocknodearticle-with-newsfield-dateofpublish{
-              padding-left: toRem(5);
+            .block-field-blocknodearticle-with-newsfield-dateofpublish {
+              @media (min-width: 1021px) {
+                padding-left: toRem(5);
+              }
+
+              .field--name-field-dateofpublish {
+                @media (min-width: 1021px) {
+                  margin-left: toRem(130);
+                }
+              }
             }
           }
         }
       }
+
+      .node--type-article-with-news {
+        margin-top: toRem(90);
+
+        h2 {
+          margin-left: $paddingForTextPart;
+          margin-bottom: -6%;
+        }
+      }
     }
   }
+}
+
+.region-sidebar-second {
+  @media (min-width: 768px) {
+    margin-left: toRem(-40);
+  }
+}
+
+.block-views-blocklatest-news-block-1 {
+  margin-top: toRem(200);
+  border: toRem(0.2) solid rgba(196, 196, 196, 0.4);
+  padding: toRem(20);
+  @media (max-width: 768px) {
+    margin-bottom: toRem(100);
+  }
+
+  article {
+    margin-bottom: toRem(10);
+    @media(max-width: 768px) {
+      margin-bottom: toRem(180);
+    }
+
+    h2 {
+      width: 70%;
+      @media (max-width: 768px) {
+        width: 70%;
+      }
+
+      a {
+        text-decoration: none;
+        color: $titleColor;
+        font-size: toRem(15);
+        @media (min-width: 1019px) and (max-width: 1140px) {
+          font-size: toRem(14);
+        }
+        @media (min-width: 768px) and (max-width: 1018px) {
+          font-size: toRem(12);
+        }
+
+        &:hover {
+          color: $categoryBackground;
+        }
+      }
+    }
+
+    .field--name-field-dateofpublish {
+      font-size: toRem(13);
+      @media (min-width: 768px) and (max-width: 1018px) {
+        font-size: toRem(12);
+      }
+      @media (min-width: 1018px) {
+        font-size: toRem(13);
+      }
+
+    }
+
+    .field--name-field-media- {
+      margin-top: toRem(-80);
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        height: $mobilePhoto;
+        width: $mobilePhoto;
+        margin-left: toRem(-20);
+        @media(min-width: 768px) {
+          height: $tabletPhoto;
+          width: $tabletPhoto;
+        }
+        @media(min-width: 1021px) {
+          height: $desktopPhoto;
+          width: $desktopPhoto;
+        }
+        @media(min-width: 1200px) {
+          height: $wideScreenPhoto;
+          width: $wideScreenPhoto;
+        }
+      }
+    }
+
+    .field--name-field-title-of-news {
+      display: none;
+    }
+  }
+}
+
+.pager {
+  margin: toRem(40) 0;
 }
 
