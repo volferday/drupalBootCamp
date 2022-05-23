@@ -13,13 +13,11 @@ $wideScreenPhoto: toRem(85);
 
 .view-id-article_view {
   .view-header {
-    width: 100vw;
-    z-index: -3;
-    position: relative;
-    left: 50%;
-    margin-left: -39vw;
-    @media (min-width: 1400px) {
-      margin-left: -39vw;
+    @media(min-width: 768px){
+      margin-left: 25vw;
+    }
+    @media (min-width: 1500px) {
+      margin-left: 20vw;
     }
   }
 
