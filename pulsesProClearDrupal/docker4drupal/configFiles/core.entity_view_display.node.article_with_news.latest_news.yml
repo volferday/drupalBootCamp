@@ -196,11 +196,11 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: datetime_default
+                type: datetime_custom
                 label: hidden
                 settings:
                   timezone_override: ''
-                  format_type: medium
+                  date_format: 'F j, o'
                 third_party_settings: {  }
             weight: 2
             additional: {  }
