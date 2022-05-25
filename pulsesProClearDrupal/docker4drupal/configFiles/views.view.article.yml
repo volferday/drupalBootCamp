@@ -2,8 +2,6 @@ uuid: 7df1a610-5247-4fa8-bbe7-7a4e37154e0b
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.article_with_news
   module:
     - node
     - user
@@ -126,33 +124,44 @@ display:
             field_identifier: ''
           exposed: false
           granularity: second
-      arguments: {  }
-      filters:
-        status:
-          id: status
+      arguments:
+        nid:
+          id: nid
           table: node_field_data
-          field: status
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            article_with_news: article_with_news
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
+          entity_field: nid
+          plugin_id: node_nid
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: node
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+      filters: {  }
       style:
         type: default
       row:
@@ -177,6 +186,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -192,6 +202,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
