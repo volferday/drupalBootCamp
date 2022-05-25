@@ -22,9 +22,99 @@ dependencies:
     - node.type.article_with_news
   module:
     - datetime
+    - layout_builder
+    - layout_discovery
     - media
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          60e6d16c-ead1-4e83-a036-e5c98b8105c1:
+            uuid: 60e6d16c-ead1-4e83-a036-e5c98b8105c1
+            region: content
+            configuration:
+              id: 'field_block:node:article_with_news:field_category_'
+              label: 'Category '
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          def3b355-c98d-40f6-8fb5-a3b31dd7938e:
+            uuid: def3b355-c98d-40f6-8fb5-a3b31dd7938e
+            region: content
+            configuration:
+              id: 'field_block:node:article_with_news:field_media_'
+              label: 'Media '
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: for_articles_list
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          c5110142-c2aa-4a92-95c4-14eb64984b19:
+            uuid: c5110142-c2aa-4a92-95c4-14eb64984b19
+            region: content
+            configuration:
+              id: 'field_block:node:article_with_news:field_author'
+              label: Author
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          831719e1-e215-4337-8655-e744488b03d0:
+            uuid: 831719e1-e215-4337-8655-e744488b03d0
+            region: content
+            configuration:
+              id: 'field_block:node:article_with_news:field_dateofpublish'
+              label: DateOfPublish
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_custom
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  date_format: 'F j, o'
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
 id: node.article_with_news.article_list
 targetEntityType: node
 bundle: article_with_news
