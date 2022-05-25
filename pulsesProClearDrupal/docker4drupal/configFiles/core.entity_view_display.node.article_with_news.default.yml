@@ -211,6 +211,25 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          2b34d841-a227-4779-af0a-525c2586b357:
+            uuid: 2b34d841-a227-4779-af0a-525c2586b357
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:node:article_with_news:field_author_information'
+              label: 'Author info'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
