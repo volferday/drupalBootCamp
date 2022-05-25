@@ -1,0 +1,175 @@
+@import "./logic.scss";
+
+
+$titleColor: black;
+$hoverColor: #4c4084;
+$authorLinkColor: #abb8c3;
+
+
+.block-views-blockarticle-block-1 {
+  article {
+    margin-top: toRem(50);
+
+    h2 {
+      a {
+        text-decoration: none;
+        color: $titleColor;
+        font-weight: 600;
+        @media (max-width: 767px) {
+          font-size: toRem(24);
+        }
+        @media (min-width: 768px) and (max-width: 1018px) {
+          font-size: toRem(24);
+        }
+        @media (min-width: 1019px) and (max-width: 1140px) {
+          font-size: toRem(30);
+        }
+        @media (min-width: 1140px) {
+          font-size: toRem(41);
+        }
+      }
+    }
+
+    .field--name-field-media-second {
+      img {
+        margin: toRem(20) 0;
+        width: 100%;
+      }
+    }
+
+    .block-inline-blockbasic {
+      .field--type-text-with-summary {
+        img[alt="ad"] {
+          @media(max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .block-field-blocknodearticle-with-newsfield-media- {
+    .field--name-field-media- {
+      @media (max-width: 992px) {
+        position: relative;
+        margin-left: -2%;
+        width: 99vw;
+      }
+
+      img {
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .field--name-field-comments {
+    padding-left: toRem(30);
+  }
+}
+
+.paragraph--type--article-type {
+  padding-left: toRem(30);
+
+  .field--name-field-cite {
+    color: $hoverColor;
+    text-align: center;
+    font-size: toRem(22);
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: toRem(25);
+    @media (min-width: 768px) and (max-width: 1018px) {
+      font-size: toRem(24);
+    }
+    @media (min-width: 1018px) {
+      font-size: toRem(32);
+    }
+  }
+}
+
+.view-must-read-sidebar, .paragraph--type--article-type {
+  margin-top: toRem(20);
+}
+
+.view-display-id-block_1 {
+  .paragraph--type--article-type {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .layout--twocol-section {
+    .layout__region--first {
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.paragraph--type--author-type {
+  .field__label {
+    display: none;
+  }
+
+  .field--name-field-media-image {
+    img {
+      border-radius: 100%;
+      width: toRem(120);
+      height: toRem(120);
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .field--name-field-name {
+    .field__item {
+      margin-top: toRem(5);
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .field--name-field-website {
+    .field__item {
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: $authorLinkColor;
+        font-size: toRem(11);
+      }
+    }
+  }
+
+  .field--name-field-bio {
+    .field__item {
+      text-align: center;
+      font-size: toRem(14);
+    }
+  }
+}
+
+.view-must-read-sidebar, .view-more-articles-sidebar, .block-field-blocknodearticle-with-newsfield-author-information {
+  @media(max-width: 992px) {
+    display: none
+  }
+
+  .views-row {
+    article {
+      margin-top: 0;
+
+      h2 {
+        a {
+          font-size: toRem(15);
+          @media (min-width: 768px) and (max-width: 1018px) {
+            font-size: toRem(12);
+          }
+          @media (min-width: 1019px) and (max-width: 1140px) {
+            font-size: toRem(12);
+          }
+        }
+      }
+    }
+  }
+}
