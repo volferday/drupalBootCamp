@@ -78,27 +78,19 @@ $wideScreenPhoto: toRem(85);
               padding-left: $paddingForTextPart;
               margin-top: toRem(100);
               font-size: toRem(15);
-              @media (max-width: 1021px) {
-                display: none;
-              }
             }
 
             .block-field-blocknodearticle-with-newsfield-author, .block-field-blocknodearticle-with-newsfield-dateofpublish {
               display: flex;
               align-items: center;
               margin-top: toRem(50);
-              @media(min-width: 1021px) {
-                margin-top: toRem(-100);
-              }
-              @media(min-width: 1200px) {
-                margin-top: toRem(-130);
-              }
             }
 
             .block-field-blocknodearticle-with-newsfield-author {
               float: left;
+              padding-left: toRem(10);
               @media (min-width: 1021px) {
-                padding-left: $paddingForTextPart;
+                //padding-left: $paddingForTextPart;
               }
             }
 
