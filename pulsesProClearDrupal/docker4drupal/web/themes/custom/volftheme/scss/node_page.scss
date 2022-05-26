@@ -64,8 +64,74 @@ $authorLinkColor: #abb8c3;
     }
   }
 
+  .block-field-blocknodearticle-with-newsfield-comments {
+    @media (min-width: 768px) and (max-width: 1021px) {
+      width: 95vw;
+    }
+  }
+
   .field--name-field-comments {
     padding-left: toRem(30);
+
+    .field--name-comment-body {
+      hrml[dir="ltr"] {
+        padding: toRem(10);
+
+        &:focus {
+          outline: none !important;
+          border-color: $authorLinkColor;
+          box-shadow: 0 0 10px $authorLinkColor;
+        }
+      }
+    }
+
+    .comment-comment-form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .field--name-comment-body {
+        width: 100%;
+      }
+
+      .field--name-field-name-of-client, .field--name-field-email, .field--name-field-website {
+        width: 100%;
+        @media (min-width: 768px) {
+          width: 30%;
+        }
+      }
+
+      input {
+        &:focus {
+          outline: none !important;
+          border-color: $authorLinkColor;
+          box-shadow: 0 0 10px $authorLinkColor;
+        }
+      }
+
+      input[data-drupal-selector="edit-preview"] {
+        display: none;
+      }
+
+      input[data-drupal-selector="edit-submit"] {
+        width: 90vw;
+        @media (min-width: 768px) {
+          width: 10vw;
+        }
+      }
+    }
+
+    .js-filter-wrapper, .cke_reset_all, .field--type-language {
+      display: none;
+    }
+  }
+
+  .js-form-type-textarea {
+    .js-form-required {
+      display: none;
+    }
   }
 }
 
@@ -151,7 +217,7 @@ $authorLinkColor: #abb8c3;
 }
 
 .view-must-read-sidebar, .view-more-articles-sidebar, .block-field-blocknodearticle-with-newsfield-author-information {
-  @media(max-width: 992px) {
+  @media(max-width: 1021px) {
     display: none
   }
 
