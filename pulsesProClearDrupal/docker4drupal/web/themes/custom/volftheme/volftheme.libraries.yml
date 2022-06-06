@@ -2,3 +2,10 @@ global-styling:
   css:
     theme:
       dist/index.style.css: {}
+global-scripts:
+  js:
+    dist/app.bundle.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
