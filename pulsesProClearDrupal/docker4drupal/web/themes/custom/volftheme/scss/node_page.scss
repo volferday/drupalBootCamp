@@ -4,6 +4,10 @@
 $titleColor: black;
 $hoverColor: #4c4084;
 $authorLinkColor: #abb8c3;
+$mobilePhoto: toRem(154);
+$tabletPhoto: toRem(55);
+$desktopPhoto: toRem(75);
+$wideScreenPhoto: toRem(85);
 
 
 .block-views-blockarticle-block-1 {
@@ -237,5 +241,95 @@ $authorLinkColor: #abb8c3;
         }
       }
     }
+  }
+}
+
+.block-views-blockmust-read-sidebar-block-1, .block-views-blockmore-articles-sidebar-block-1 {
+  border: toRem(0.2) solid rgba(196, 196, 196, 0.4);
+  padding: toRem(20);
+  margin: toRem(50) 0 0 toRem(-50);
+  @media (max-width: 768px) {
+    margin-bottom: toRem(100);
+  }
+
+  article {
+    margin-bottom: toRem(10);
+    @media(max-width: 768px) {
+      margin-bottom: toRem(180);
+    }
+
+    h2 {
+      width: 70%;
+      @media (max-width: 768px) {
+        width: 70%;
+      }
+
+      a {
+        text-decoration: none;
+        color: $titleColor;
+        font-size: toRem(15);
+        @media (min-width: 1019px) and (max-width: 1140px) {
+          font-size: toRem(14);
+        }
+        @media (min-width: 768px) and (max-width: 1018px) {
+          font-size: toRem(12);
+        }
+
+        &:hover {
+          color: $hoverColor;
+        }
+      }
+    }
+
+    .field--name-field-dateofpublish {
+      font-size: toRem(13);
+      @media (min-width: 768px) and (max-width: 1018px) {
+        font-size: toRem(12);
+      }
+      @media (min-width: 1018px) {
+        font-size: toRem(13);
+      }
+
+    }
+
+    .field--name-field-media- {
+      margin-top: toRem(-80);
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        height: $mobilePhoto;
+        width: $mobilePhoto;
+        margin-left: toRem(-15);
+        @media(min-width: 768px) {
+          height: $tabletPhoto;
+          width: $tabletPhoto;
+        }
+        @media(min-width: 1021px) {
+          height: $desktopPhoto;
+          width: $desktopPhoto;
+        }
+        @media(min-width: 1200px) {
+          height: $wideScreenPhoto;
+          width: $wideScreenPhoto;
+        }
+      }
+    }
+
+    .field--name-field-title-of-news {
+      display: none;
+    }
+  }
+}
+
+.block-views-blockmore-articles-sidebar-block-1 {
+  margin-bottom: toRem(50);
+}
+
+input[data-drupal-selector="edit-submit"] {
+  background-color: black;
+
+  &:hover {
+    background-color: $hoverColor;
   }
 }
