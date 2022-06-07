@@ -487,56 +487,11 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: table
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          columns:
-            field_advertiseh: field_advertiseh
-            field_abouth: field_abouth
-            field_eventsh: field_eventsh
-            field_writeforush: field_writeforush
-            field_inthepressh: field_inthepressh
-            field_signin: field_signin
-          default: '-1'
-          info:
-            field_advertiseh:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_abouth:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_eventsh:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_writeforush:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_inthepressh:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_signin:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
       row:
         type: fields
         options:

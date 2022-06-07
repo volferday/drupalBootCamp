@@ -2,9 +2,45 @@
 
 $font: 'Gelasio', serif;
 $mainColor: black;
+$textMenuColor: white;
 
 .region-header, .navbar-nav {
   font-family: $font;
+
+  .node--type-header {
+    h2 {
+      display: none;
+    }
+  }
+}
+
+.block-views-blockheader-block-1 {
+  margin-top: 50px;
+}
+
+.block-views-blockprimarymenu-block-1 {
+  background-color: $mainColor;
+
+  a {
+    color: $textMenuColor;
+    text-decoration: none;
+  }
+
+  .views-field-field-signin {
+    float: right;
+  }
+
+  .views-row {
+    margin: 0 50px;
+  }
+
+}
+
+.region-primary-menu {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
 }
 
 .region-header {
