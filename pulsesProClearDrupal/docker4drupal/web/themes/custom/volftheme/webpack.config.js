@@ -6,6 +6,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const config = {
   entry: {
     index: path.join(__dirname, './src', 'bundle.js'),
+    app:path.join(__dirname, './js', 'app.js'),
   },
   output: {
     path: path.resolve(__dirname, './dist'),
