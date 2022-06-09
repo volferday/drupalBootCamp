@@ -1,11 +1,11 @@
-uuid: 6cbfbb94-8262-4603-a004-e84d9364c7d5
+uuid: 0035fe7a-e457-4624-96d0-1237a861f844
 langcode: en
 status: true
 dependencies:
   module:
     - paragraph_photo
-id: article_type
-label: 'Article type'
+id: photo_img
+label: 'Photo + img'
 icon_uuid: null
 icon_default: null
 description: ''

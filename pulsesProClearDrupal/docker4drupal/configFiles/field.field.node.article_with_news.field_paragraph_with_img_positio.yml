@@ -1,0 +1,37 @@
+uuid: b6d88122-ba3b-44e2-ba4a-bdb4ef596324
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_with_img_positio
+    - node.type.article_with_news
+    - paragraphs.paragraphs_type.photo_img
+  module:
+    - entity_reference_revisions
+id: node.article_with_news.field_paragraph_with_img_positio
+field_name: field_paragraph_with_img_positio
+entity_type: node
+bundle: article_with_news
+label: 'Paragraph with img position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      photo_img: photo_img
+    negate: 0
+    target_bundles_drag_drop:
+      article_type:
+        weight: 4
+        enabled: false
+      author_type:
+        weight: 5
+        enabled: false
+      photo_img:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions
