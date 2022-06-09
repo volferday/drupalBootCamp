@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.article_with_news.field_main_content
     - field.field.node.article_with_news.field_media_
     - field.field.node.article_with_news.field_must_read
+    - field.field.node.article_with_news.field_paragraph_with_img_positio
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
     - node.type.article_with_news
@@ -209,7 +210,7 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            weight: 0
+            weight: 1
             additional: {  }
           2b34d841-a227-4779-af0a-525c2586b357:
             uuid: 2b34d841-a227-4779-af0a-525c2586b357
@@ -229,6 +230,25 @@ third_party_settings:
                   view_mode: default
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+          246ab706-e258-48bb-bf07-02101aa4f552:
+            uuid: 246ab706-e258-48bb-bf07-02101aa4f552
+            region: blb_region_col_2
+            configuration:
+              id: 'field_block:node:article_with_news:field_paragraph_with_img_positio'
+              label: 'Paragraph with img position'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
         third_party_settings: {  }
       -
@@ -348,6 +368,15 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_paragraph_with_img_positio:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
     region: content
 hidden:
   body: true

@@ -6,14 +6,17 @@ dependencies:
     - core.entity_view_mode.node.arts_sidebar
     - field.field.node.article_with_news.body
     - field.field.node.article_with_news.field_author
+    - field.field.node.article_with_news.field_author_information
     - field.field.node.article_with_news.field_category_
     - field.field.node.article_with_news.field_comments
     - field.field.node.article_with_news.field_dateofpublish
     - field.field.node.article_with_news.field_editorpicks
     - field.field.node.article_with_news.field_general_news
     - field.field.node.article_with_news.field_is_podcast
+    - field.field.node.article_with_news.field_main_content
     - field.field.node.article_with_news.field_media_
     - field.field.node.article_with_news.field_must_read
+    - field.field.node.article_with_news.field_paragraph_with_img_positio
     - field.field.node.article_with_news.field_short_description
     - field.field.node.article_with_news.field_title_of_news
     - image.style.thumbnail
@@ -76,5 +79,6 @@ hidden:
   field_is_podcast: true
   field_main_content: true
   field_must_read: true
+  field_paragraph_with_img_positio: true
   field_short_description: true
   links: true
